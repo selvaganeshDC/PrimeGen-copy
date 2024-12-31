@@ -286,3 +286,167 @@
         height: 30px;
     }
 }
+
+/* second banner section */
+.carousel-section {
+    background-color: #fff2f6;
+    padding: 40px 0;
+}
+
+.carousel-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 400px;
+}
+
+.banner-image {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.stat-box img {
+    width: 40px;
+    height: 40px;
+}
+
+.banner-icon {
+    position: absolute;
+    top: -15px;
+    right: -80px;
+    width: 60px;
+    height: 5px;
+    background-color: #dc3545;
+}
+
+.banner-text {
+    flex: 1;
+    max-width: 400px;
+}
+
+.banner-text h2 {
+    color: #2c016e;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.banner-text p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.brand-logo {
+    max-width: 200px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent;  /* Remove default background */
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%);  /* Make icons black */
+}
+
+/* Style for the control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+.carousel-control-prev {
+    left: 0px;
+}
+
+.carousel-control-next {
+    right: 0px;
+}
+
+@media screen and (max-width: 992px) {
+    .banner-icon{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-content {
+        flex-direction: row; /* Keeps items in row */
+        gap: 15px; /* Adds space between image and text */
+      }
+    
+      .image-container {
+        flex: 0 0 45%; /* Takes up 45% of the container width */
+      }
+    
+      .banner-text {
+        flex: 0 0 50%; /* Takes up 50% of the container width */
+        padding: 0 10px;
+      }
+    
+      .banner-text h2 {
+        font-size: 1.2rem; /* Smaller heading for mobile */
+        margin-bottom: 10px;
+      }
+      .banner-text p {
+        font-size: 0.9rem; /* Smaller paragraph text for mobile */
+      }
+    .brand-logo{
+        display: none;
+    }
+    
+    /* Adjust navigation arrows for mobile */
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .carousel-control-prev {
+        left: 10px;
+    }
+
+    .carousel-control-next {
+        right: 10px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 15px;
+        height: 15px;
+        filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%);
+    }
+    .banner-icon{
+        display: none;
+    }
+}
+
+
+/* For very small screens */
+@media screen and (max-width: 480px) {
+    .banner-text h2 {
+      font-size: 1rem;
+    }
+  
+    .banner-text p {
+      font-size: 0.8rem;
+    }
+  }

@@ -8,6 +8,9 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <link rel="stylesheet" href="./css/Global.css" />
   </head>
   <body>
@@ -51,7 +54,8 @@
             <li class="nav-item">
               <a class="nav-link active" href="#">Home</a>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
+            
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -69,6 +73,9 @@
                 </li>
                 <li><a class="dropdown-item" href="#">News and Events</a></li>
               </ul>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Services</a>
@@ -98,7 +105,7 @@
     <div class="mobile-menu">
       <button class="close-button" id="closeMenu">×</button>
       <a href="#" class="home">Home</a>
-      <a
+      <!-- <a
         href="#"
         class="about-us dropdown-toggle"
         data-bs-toggle="collapse"
@@ -109,7 +116,8 @@
       <div class="collapse submenu" id="aboutSubmenu">
         <a href="#">Awards and Accreditations</a>
         <a href="#">News and Events</a>
-      </div>
+      </div> -->
+      <a href="#">About us</a>
       <a href="#">Services</a>
       <a href="#">Book a Test</a>
       <a href="#">Franchisee</a>
@@ -304,10 +312,10 @@
     <section class="packages-section">
         <div class="container">
             <div class="section-title">
-                <h2 class="mb-3">
+                <h1 class="mb-3">
                     <span class="purple-text">Master Health</span>
                     <span class="pink-text">Checkup Packages</span>
-                </h2>
+                </h1>
                 <p class="text-muted">
                     Our Health Checkup packages offer you a wide range of screening
                     programmes to suit individual needs.
@@ -406,87 +414,84 @@
     </section>
 
     <!-- Department section -->
-    <section class="department-section">
-        <div class="container position-relative">
-            <div class="section-title">
-                <h2>
-                    <span class="purple-text">Our</span>
-                    <span class="pink-text">Department</span>
-                </h2>
-                <p>All analyzes are carried out using modern equipment</p>
-            </div>
-
-            <div id="departmentCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="d-flex justify-content-evenly">
-                            <div class="department-card">
-                                <div class="department-image">
-                                    <img src="./Assets/depart-img1.png" alt="Clinical Chemistry">
-                                </div>
-                                <h3 class="department-name">Clinical Chemistry</h3>
-                            </div>
-                            <div class="department-card">
-                                <div class="department-image">
-                                    <img src="./Assets/depart-img2.png" alt="Immunochemistry">
-                                </div>
-                                <h3 class="department-name">Immunochemistry</h3>
-                            </div>
-                            <div class="department-card">
-                                <div class="department-image">
-                                    <img src="./Assets/depart-img3.png" alt="Molecular Biology">
-                                </div>
-                                <h3 class="department-name">Molecular Biology</h3>
-                            </div>
-                            <div class="department-card">
-                                <div class="department-image">
-                                    <img src="./Assets/depart-img4.png" alt="Microbiology">
-                                </div>
-                                <h3 class="department-name">Microbiology</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                      <div class="d-flex justify-content-evenly">
-                          <div class="department-card">
-                              <div class="department-image">
-                                  <img src="./Assets/depart-img1.png" alt="Clinical Chemistry">
-                              </div>
-                              <h3 class="department-name">Clinical Chemistry</h3>
-                          </div>
-                          <div class="department-card">
-                              <div class="department-image">
-                                  <img src="./Assets/depart-img2.png" alt="Immunochemistry">
-                              </div>
-                              <h3 class="department-name">Immunochemistry</h3>
-                          </div>
-                          <div class="department-card">
-                              <div class="department-image">
-                                  <img src="./Assets/depart-img3.png" alt="Molecular Biology">
-                              </div>
-                              <h3 class="department-name">Molecular Biology</h3>
-                          </div>
-                          <div class="department-card">
-                              <div class="department-image">
-                                  <img src="./Assets/depart-img4.png" alt="Microbiology">
-                              </div>
-                              <h3 class="department-name">Microbiology</h3>
-                          </div>
+    <section class="department-section py-5">
+      <div class="container position-relative">
+          <div class="section-title text-center mb-5">
+              <h1>
+                  <span class="purple-text">Our</span>
+                  <span class="pink-text">Department</span>
+              </h1>
+              <p>All analyzes are carried out using modern equipment</p>
+          </div>
+  
+          <div id="departmentSlider" class="row">
+              <div class="department-item">
+                  <div class="department-card text-center">
+                      <div class="department-image mb-3">
+                          <img src="./Assets/depart-img1.png" alt="Clinical Chemistry" class="img-fluid">
                       </div>
+                      <h3 class="department-name">Clinical Chemistry</h3>
                   </div>
+              </div>
+              <div class="department-item col-3">
+                  <div class="department-card text-center">
+                      <div class="department-image mb-3">
+                          <img src="./Assets/depart-img2.png" alt="Immunochemistry" class="img-fluid">
+                      </div>
+                      <h3 class="department-name">Immunochemistry</h3>
+                  </div>
+              </div>
+              <div class="department-item col-3">
+                  <div class="department-card text-center">
+                      <div class="department-image mb-3">
+                          <img src="./Assets/depart-img3.png" alt="Molecular Biology" class="img-fluid">
+                      </div>
+                      <h3 class="department-name">Molecular Biology</h3>
+                  </div>
+              </div>
+              <div class="department-item col-3">
+                  <div class="department-card text-center">
+                      <div class="department-image mb-3">
+                          <img src="./Assets/depart-img4.png" alt="Microbiology" class="img-fluid">
+                      </div>
+                      <h3 class="department-name">Microbiology</h3>
+                  </div>
+              </div>
+              <div class="department-item col-3">
+                <div class="department-card text-center">
+                    <div class="department-image mb-3">
+                        <img src="./Assets/depart-img1.png" alt="Clinical Chemistry" class="img-fluid">
+                    </div>
+                    <h3 class="department-name">Clinical Chemistry</h3>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#departmentCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#departmentCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-        </div>
-    </section>
+            <div class="department-item col-3">
+                <div class="department-card text-center">
+                    <div class="department-image mb-3">
+                        <img src="./Assets/depart-img2.png" alt="Immunochemistry" class="img-fluid">
+                    </div>
+                    <h3 class="department-name">Immunochemistry</h3>
+                </div>
+            </div>
+            <div class="department-item col-3">
+                <div class="department-card text-center">
+                    <div class="department-image mb-3">
+                        <img src="./Assets/depart-img3.png" alt="Molecular Biology" class="img-fluid">
+                    </div>
+                    <h3 class="department-name">Molecular Biology</h3>
+                </div>
+            </div>
+            <div class="department-item col-3">
+                <div class="department-card text-center">
+                    <div class="department-image mb-3">
+                        <img src="./Assets/depart-img4.png" alt="Microbiology" class="img-fluid">
+                    </div>
+                    <h3 class="department-name">Microbiology</h3>
+                </div>
+            </div>
+          </div>
+      </div>
+  </section>
 
     <!-- PrimeGen Lab -->
     <section class="primegenlab-section">
@@ -494,20 +499,16 @@
           <div class="row py-2">
               <!-- Image Column -->
               <div class="col-lg-6">
-                  <div class="position-relative">
-                      <img src="assets/webpage.png" alt="PrimeGen Diagnostic Services"
-                          class="img-fluid rounded primegenlab-image w-100">
-
-                      <button class="watch-video-btn">
-                          <span class="play-icon">
-                              <svg viewBox="0 0 24 24">
-                                  <path d="M8 5v14l11-7z" />
-                              </svg>
-                          </span>
-                          Watch Video
-                      </button>
-
+                <div class="video">
+                  <a class="btn-video-outer" data-fancybox="" href="https://youtu.be/_Zepjr4MxIo">
+                      <span class="btn-video">
+                          <i class="bi bi-play-fill btn-play"></i>watch video
+                      </span>
+                  </a>
+                  <div class="img">
+                      <img src="Assets/webpage.png">
                   </div>
+              </div>
               </div>
               <!-- Content Column -->
               <div class="col-lg-6">
@@ -538,7 +539,10 @@
   <section class="services-section py-5">
     <div class="container">
         <div class="section-header text-center mb-5">
-            <h2 class="mb-3"><span>Our</span> <span>Services</span></h2>
+          <h1>
+            <span class="purple-text">Our</span>
+            <span class="pink-text">Services</span>
+        </h1>
             <p class="text-muted">All analyzes are carried out using modern equipment</p>
         </div>
 
@@ -630,7 +634,150 @@
     </div>
 </section>
 
+<!-- Our Specialists -->
+<section class="specialists-section">
+  <div class="container">
+      <div class="section-title text-center mb-5">
+          <h1>
+              <span class="purple-text">Our</span>
+              <span class="pink-text">Specialists</span>
+          </h1>
+          <p>All analyzes are carried out using modern equipment</p>
+      </div>
+
+      <div id="specialistsSlider" class="row">
+          <div class="col-3">
+              <div class="specialist-card">
+                  <img src="./Assets/doc-1.png" alt="Dr. Sreedhar Mayavan" class="specialist-img">
+                  <h3 class="specialist-name">Dr. Sreedhar Mayavan</h3>
+                  <p class="specialist-title">Ph.D (Biotech)</p>
+                  <p class="specialist-title">Managing Director</p>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="specialist-card">
+                  <img src="./Assets/doc-2.png" alt="Dr. Ashivin Sreedhar" class="specialist-img">
+                  <h3 class="specialist-name">Dr. Ashivin Sreedhar</h3>
+                  <p class="specialist-title">Ph.D in Human Genetics,</p>
+                  <p class="specialist-title">Founder and Director</p>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="specialist-card">
+                  <img src="./Assets/doc-3.png" alt="S.B. Easwar" class="specialist-img">
+                  <h3 class="specialist-name">S.B. Easwar</h3>
+                  <p class="specialist-title">Vice President - Operations</p>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="specialist-card">
+                  <img src="./Assets/doc-4.png" alt="Dr. Balabhaskar R" class="specialist-img">
+                  <h3 class="specialist-name">Dr. Balabhaskar R</h3>
+                  <p class="specialist-title">Ph.D (Biotech), Consultant Biochemist</p>
+                  <p class="specialist-title">Chief Operations (Tech & Admin)</p>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="specialist-card">
+                  <img src="./Assets/doc-1.png" alt="Dr. Sreedhar Mayavan" class="specialist-img">
+                  <h3 class="specialist-name">Dr. Sreedhar Mayavan</h3>
+                  <p class="specialist-title">Ph.D (Biotech)</p>
+                  <p class="specialist-title">Managing Director</p>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="specialist-card">
+                  <img src="./Assets/doc-2.png" alt="Dr. Ashivin Sreedhar" class="specialist-img">
+                  <h3 class="specialist-name">Dr. Ashivin Sreedhar</h3>
+                  <p class="specialist-title">Ph.D in Human Genetics,</p>
+                  <p class="specialist-title">Founder and Director</p>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="specialist-card">
+                  <img src="./Assets/doc-3.png" alt="S.B. Easwar" class="specialist-img">
+                  <h3 class="specialist-name">S.B. Easwar</h3>
+                  <p class="specialist-title">Vice President - Operations</p>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="specialist-card">
+                  <img src="./Assets/doc-4.png" alt="Dr. Balabhaskar R" class="specialist-img">
+                  <h3 class="specialist-name">Dr. Balabhaskar R</h3>
+                  <p class="specialist-title">Ph.D (Biotech), Consultant Biochemist</p>
+                  <p class="specialist-title">Chief Operations (Tech & Admin)</p>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="specialist-card">
+                  <img src="./Assets/doc-1.png" alt="Dr. Sreedhar Mayavan" class="specialist-img">
+                  <h3 class="specialist-name">Dr. Sreedhar Mayavan</h3>
+                  <p class="specialist-title">Ph.D (Biotech)</p>
+                  <p class="specialist-title">Managing Director</p>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="specialist-card">
+                  <img src="./Assets/doc-2.png" alt="Dr. Ashivin Sreedhar" class="specialist-img">
+                  <h3 class="specialist-name">Dr. Ashivin Sreedhar</h3>
+                  <p class="specialist-title">Ph.D in Human Genetics,</p>
+                  <p class="specialist-title">Founder and Director</p>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="specialist-card">
+                  <img src="./Assets/doc-3.png" alt="S.B. Easwar" class="specialist-img">
+                  <h3 class="specialist-name">S.B. Easwar</h3>
+                  <p class="specialist-title">Vice President - Operations</p>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="specialist-card">
+                  <img src="./Assets/doc-4.png" alt="Dr. Balabhaskar R" class="specialist-img">
+                  <h3 class="specialist-name">Dr. Balabhaskar R</h3>
+                  <p class="specialist-title">Ph.D (Biotech), Consultant Biochemist</p>
+                  <p class="specialist-title">Chief Operations (Tech & Admin)</p>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="specialist-card">
+                  <img src="./Assets/doc-1.png" alt="Dr. Sreedhar Mayavan" class="specialist-img">
+                  <h3 class="specialist-name">Dr. Sreedhar Mayavan</h3>
+                  <p class="specialist-title">Ph.D (Biotech)</p>
+                  <p class="specialist-title">Managing Director</p>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="specialist-card">
+                  <img src="./Assets/doc-2.png" alt="Dr. Ashivin Sreedhar" class="specialist-img">
+                  <h3 class="specialist-name">Dr. Ashivin Sreedhar</h3>
+                  <p class="specialist-title">Ph.D in Human Genetics,</p>
+                  <p class="specialist-title">Founder and Director</p>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="specialist-card">
+                  <img src="./Assets/doc-3.png" alt="S.B. Easwar" class="specialist-img">
+                  <h3 class="specialist-name">S.B. Easwar</h3>
+                  <p class="specialist-title">Vice President - Operations</p>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="specialist-card">
+                  <img src="./Assets/doc-4.png" alt="Dr. Balabhaskar R" class="specialist-img">
+                  <h3 class="specialist-name">Dr. Balabhaskar R</h3>
+                  <p class="specialist-title">Ph.D (Biotech), Consultant Biochemist</p>
+                  <p class="specialist-title">Chief Operations (Tech & Admin)</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

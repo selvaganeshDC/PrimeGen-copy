@@ -21,7 +21,8 @@
                 </div>
                 <div class="col-lg-3 book-btn d-flex justify-content-center gap-3">
                     <button class="btn-book-collection">Book Home Collection</button>
-                    <a href="#" class="btn-download-reports">Download Reports</a>
+                    <span class="d-flex align-items-center justify-content-center"><a href="#" class="btn-download-reports">Download Reports</a></span>
+                    
                 </div>
             </div>
         </div>
@@ -43,6 +44,7 @@
             
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+                    <li class="nav-item"></li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Home</a>
                     </li>
@@ -310,8 +312,8 @@
 
             <div class="row">
                 <!-- Video 1 -->
-                <div class="col-lg-6 ps-5">
-                    <div class="video-card blue-overlay" onclick="playVideo('video1.mp4')">
+                <div class="col-lg-6">
+                    <div class="video-card blue-overlay" onclick="playVideo('./Assets/sample_1280x720.mp4')">
                         <img src="./Assets/image 20.png" alt="Prime Gen Video 1" class="video-thumbnail">
                         <div class="video-overlay">
                             <button class="play-button">
@@ -323,8 +325,8 @@
                 </div>
 
                 <!-- Video 2 -->
-                <div class="col-lg-6 ps-5">
-                    <div class="video-card" onclick="playVideo('video2.mp4')">
+                <div class="col-lg-6">
+                    <div class="video-card" onclick="playVideo('./Assets/sample_1280x720.mp4')">
                         <img src="./Assets/image 21.png" alt="Prime Gen Video 2" class="video-thumbnail">
                         <div class="video-overlay">
                             <button class="play-button">
@@ -354,7 +356,181 @@
             </div>
         </div>
     </div>
+
+    <section class="testimonial-section py-5">
+        <div class="container position-relative">
+            <!-- Grid for Header and Image -->
+            <div class="row align-items-center mb-5">
+                <!-- Header -->
+                <div class="col-12 col-lg-3">
+                    <div class="testimonial-header">
+                        <h1>
+                            <span class="what_our">WHAT OUR</span><br>
+                            <span class="clients_say">CLIENTS SAY</span>
+                        </h1>
+                    </div>
+                </div>
+                <!-- Image -->
+                <div class="col-12 col-lg-9 text-center text-md-end">
+                    <div class="testimonial-img">
+                        <img src="./Assets/testimonal.jpg" alt="Testimonial" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonials Carousel -->
+            <div id="testimonialCarousel" class="carousel slide testimonial-carousel" data-bs-ride="carousel">
+                <!-- Indicators/Dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <!-- Slides -->
+                <div class="carousel-inner text-center">
+                    <div class="carousel-item active h-100">
+                        <div class="testimonial-card mx-auto p-4 rounded">
+                            <p class="testimonial-text">"I had my family member travelling abroad. The RT-PCR test was made and results were given faster than expected. For international travellers with urgent requirement for COVID test, kindly reach them and they are very helpful."</p>
+                            <p class="client-name">- Sarah Johnson</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <div class="testimonial-card mx-auto p-4 rounded">
+                            <p class="testimonial-text">"Outstanding service! The staff was professional and the process was smooth and efficient. Highly recommended for all medical testing needs."</p>
+                            <p class="client-name">- Michael Smith</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <div class="testimonial-card mx-auto p-4 rounded">
+                            <p class="testimonial-text">"Excellent experience from start to finish. The team was knowledgeable and caring. Will definitely come back for future needs."</p>
+                            <p class="client-name">- Emily Brown</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
+    
+    
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo text-center mb-5">
+                <img src="./Assets//logo.png" alt="Company Logo" class="img-fluid">
+            </div>
+            <div class="row">
+                <!-- Information Column -->
+                <div class="col-md-3 mb-4">
+                    <h4>INFORMATION</h4>
+                    <ul>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="#">Terms & Conditions</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="#">Privacy Policy</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="#">Cancellation and Refund</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="#">Terms of Service</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="#">Cookie Policy</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="#">Patient Information Consent</a></span>
+                        </li>
+                    </ul>
+                </div>
+            
+                <!-- Contacts Column -->
+                <div class="col-md-3 mb-4">
+                    <h4>CONTACTS</h4>
+                    <div class="contact-info">
+                        <p><i class="bi bi-telephone-fill"></i> +91-44-43596319</p>
+                        <p><i class="bi bi-telephone-fill"></i> +91-44-29530009</p>
+                        <p><i class="bi bi-telephone-fill"></i> +91-44-22670097</p>
+                        <p><i class="bi bi-telephone-fill"></i> +91-9499937009</p>
+                    </div>
+                    <p>
+                        <i class="bi bi-geo-alt-fill"></i> ShriAshi Tower,<br>
+                        No.30/36, 23rd Street,<br>
+                        Thillai Ganga Nagar,<br>
+                        Nanganallur,<br>
+                        Chennai - 600061
+                    </p>
+                    <p><i class="bi bi-envelope-fill"></i> info@example.in</p>
+                </div>
+            
+                <!-- Opening Hours Column -->
+                <div class="col-md-3 mb-4 d-flex flex-column justify-content-between">
+                    <div class="opening-hours">
+                        <h4>OPENING HOURS</h4>
+                        <p>Mon - Sat: 07:00 to 21:00</p>
+                        <p>Sunday: 07:00 to 19:00</p>
+                    </div>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            
+                <!-- Quick Links Column -->
+                <div class="col-md-3 mb-4">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="#">About Us</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="#">Accreditation</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="#">Services</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="#">Book a Test</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="#">Franchisee</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="#">Careers</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="#">Events</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="#">Contact Us</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+    
+            <!-- Copyright Section -->
+            <div class="copyright">
+                <p>Copyright © 2024 Your Company Name. All rights reserved.</p>
+                <p>Powered by YourCompany</p>
+            </div>
+        </div>
+    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>

@@ -58,3 +58,5 @@ function playVideo(videoUrl) {
         videoPlayer.currentTime = 0;
     });
 }
+
+

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
     --primary-blue: #0E1B47;
     --primary-pink: #F22283;
@@ -5,6 +6,11 @@
     --primary-gray: #252B42;
     --primary-light-pink: #FEE7F1;
     --primary-light-gray: #F7F7F7;
+}
+
+body{
+    font-family: "Roboto", serif;
+    font-style: normal;
 }
 
 /* Top Bar Styles */
@@ -15,6 +21,10 @@
     display: flex;
     align-items: center;
 }
+.contact-info{
+    font-family: "Nunito", serif;
+  font-style: normal;
+}
 
 .contact-info span {
     font-size: 14px;
@@ -24,7 +34,7 @@
 
 .contact-info a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 14px;
 }
 
@@ -205,7 +215,7 @@
 .first-banner-heading {
     color: #1a237e;
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 400;
     max-width: 500px;
     margin-bottom: 2rem;
 }
@@ -452,15 +462,18 @@
 .video-card {
     position: relative;
     border-radius: 20px;
-    /* overflow: hidden; */
     margin-bottom: 2rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    img{
+        border-radius: 10px;
+        object-fit: cover;
+    }
 }
 
 .video-overlay {
     position: absolute;
-    top: 10px;
+    top: 15px;
     left: -20px;
     display: flex;
     flex-direction: column;
@@ -471,7 +484,6 @@
 
 .video-thumbnail {
     width: 100%;
-    height: 300px;
     object-fit: cover;
 }
 
@@ -491,7 +503,7 @@
 
 .play-button:hover {
     transform: scale(1.05);
-    background: #d63384;
+    background: var(--primary-pink);
 }
 
 .prime-gen-logo {
@@ -592,14 +604,14 @@
 }
 
 .banner-text h2 {
-    color: #2c016e;
+    color: var(--primary-blue);
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .banner-text p {
-    color: #666;
+    color: var(--primary-gray);
     font-size: 1.1rem;
     margin-bottom: 30px;
     line-height: 1.6;
@@ -636,6 +648,10 @@
 @media screen and (max-width: 992px) {
     .banner-icon{
         display: none;
+    }
+    .video-overlay {
+        top: 15px;
+        left: 20px;
     }
 }
 
@@ -702,5 +718,154 @@
   
     .banner-text p {
       font-size: 0.8rem;
+    }
+  }
+
+
+  .footer {
+    background-color: #0a1433;
+    color: white;
+    padding: 50px 0;
+}
+
+.footer h4 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer h4:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 2px;
+    background-color: #007bff;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 12px;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #007bff;
+    padding-left: 5px;
+}
+
+.footer .contact-info {
+    margin-bottom: 10px;
+}
+
+.footer .social-icons a {
+    color: white;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.footer .copyright {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+.right-icon i{
+    font-size: small;
+    font-weight: bold !important;
+}
+
+/* test */
+.testimonial-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-header h1 .what_our {
+    color: var(--primary-purple);
+}
+
+.testimonial-header h1 .clients_say {
+    color: var(--primary-pink);
+}
+
+.testimonial-carousel {
+    width: 600px;
+    height: 200px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+
+.testimonial-card {
+    height: 200px !important;
+    margin: 0 auto;
+    background: white !important;
+    border-radius: 8px;
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.client-name {
+    font-size: 1rem;
+    color: var(--primary-pink);
+    font-style: italic;
+}
+
+.carousel-indicators button {
+    width: 12px !important;
+    height: 3px !important;
+    border-radius: 50%;
+    background-color: var(--primary-pink) !important;
+    border: none;
+}
+
+.carousel-indicators .active {
+    background-color:var(--primary-purple) !important;
+}
+.testimonial-img img{
+    height: 600px;
+}
+
+@media screen and (max-width: 992px) {
+    .testimonial-header h1 {
+        text-align: center;
+    }
+    .testimonial-carousel {
+        width: 100%;
+        /* height: 300px; */
+        margin-top: 20px;
+        position: static !important;
+    }
+    .testimonial-img img{
+        height: auto !important;
+    }
+  }
+
+@media screen and (max-width: 480px) {
+    .testimonial-carousel {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        position: static;
+    }
+    .testimonial-card {
+        height:max-content !important;
     }
   }

@@ -2,6 +2,10 @@
 :root {
     --primary-blue: #0E1B47;
     --primary-pink: #F22283;
+    --primary-purple1: #5C3389;
+    --card-green: #78D3CD;
+    --card-purple: #CAC0F7;
+    --card-blue: #9EC1E6;
     --primary-purple: #662D91;
     --primary-gray: #252B42;
     --primary-light-pink: #FEE7F1;
@@ -708,7 +712,6 @@ body{
         display: none;
     }
 }
-
 
 /* For very small screens */
 @media screen and (max-width: 480px) {

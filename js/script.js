@@ -1,3 +1,4 @@
+// nav bar script
 document.getElementById('mobileMenuBtn').addEventListener('click', function() {
     document.querySelector('.mobile-menu').classList.add('active');
     document.querySelector('.mobile-overlay').style.display = 'block';

@@ -10,6 +10,7 @@
     --primary-gray: #252B42;
     --primary-light-pink: #FEE7F1;
     --primary-light-gray: #F7F7F7;
+    --primary-blue-name :#0063AC;
 }
 
 body{
@@ -61,7 +62,7 @@ body{
 
 /* Navbar Styles */
 .navbar {
-    height: 100px;
+    /* height: 100px; */
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -304,7 +305,26 @@ body{
         width: 30px;
         height: 30px;
     }
+    .notepad-icon {
+        top: 40px;
+        left: 80px;
+    }
+    
+    .heart-icon {
+        top: 65px;
+        right: 20%;
+    }
+    .microscope-icon {
+        bottom: 20px;
+        right: 50px;
+    }
 }
+@media (max-width: 480px) {
+    .service-card{
+        font-size: small;
+    }
+}
+
 /* Our braches */
 .branches-section {
     background-color: var(--primary-light-gray);
@@ -872,69 +892,91 @@ body{
         height:max-content !important;
     }
   }
-
 /* package section */
 .packages-section {
-    padding: 60px 0;
+    padding: 40px 20px;
+    width: 100%;
+    overflow: hidden;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Title styling */
 .section-title {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.purple-text {
-    color: var(--primary-purple);
+.section-title h1 {
+    font-size: clamp(24px, 4vw, 36px);
+    margin-bottom: 15px;
 }
 
-.pink-text {
-    color: var(--primary-pink)
+/* Row styling */
+.packages-section .container .row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
 }
 
+.packages-section .container .row::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+/* Card styling */
 .package-card {
-    width: 361px;
-    height: 610px;
-    padding: 30px;
+    background: #fff;
     border-radius: 15px;
-    margin: 0 auto;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    transition: transform 0.3s ease;
 }
 
 .package-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.package-card.green {
-    background-color: var(--card-green);
-}
+.package-card.green { background-color: var(--card-green); }
+.package-card.purple { background-color: var(--card-purple); }
+.package-card.blue { background-color: var(--card-blue); }
 
-.package-card.purple {
-    background-color: var(--card-purple);
-}
-
-.package-card.blue {
-    background-color: var(--card-blue);
-}
-
+/* Card content styling */
 .package-image {
+    width: 100%;
     margin-bottom: 20px;
-    max-width: 100%;
+}
+
+.package-image img {
+    width: 100%;
     height: auto;
+    max-width: 280px;
+    object-fit: cover;
 }
 
 .package-title {
-    font-size: 24px;
+    font-size: clamp(20px, 3vw, 24px);
     margin-bottom: 15px;
     color: #333;
 }
 
 .package-description {
+    font-size: clamp(14px, 2vw, 16px);
     margin-bottom: 25px;
     color: #666;
+    flex-grow: 1;
 }
 
 .view-more-btn {
@@ -944,29 +986,64 @@ body{
     color: var(--primary-pink);
     text-decoration: none;
     border-radius: 25px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    font-size: clamp(14px, 2vw, 16px);
 }
 
-/* Responsive adjustments */
-@media (max-width: 1400px) {
-    .package-card {
-        width: 100%;
+.view-more-btn:hover {
+    background-color: var(--primary-pink);
+    color: #fff;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 576px) {
+    .packages-section .container .col {
+        flex: 0 0 calc(100% - 20px);
         max-width: 361px;
     }
 }
 
-@media (max-width: 768px) {
-    .package-card {
-        margin-bottom: 30px;
+@media (min-width: 768px) {
+    .packages-section {
+        padding: 50px 30px;
+    }
+    
+    .packages-section .container .row-cols-md-2 > * {
+        flex: 0 0 calc(50% - 20px);
+        max-width: 361px;
     }
 }
-.row {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;     /* Firefox */
+
+@media (min-width: 992px) {
+    .packages-section {
+        padding: 60px 40px;
+    }
+    
+    .packages-section .container .row-cols-lg-3 > * {
+        flex: 0 0 calc(33.333% - 20px);
+        max-width: 361px;
+    }
+    
+    .packages-section .container .row {
+        flex-wrap: wrap;
+        overflow-x: visible;
+    }
 }
 
-.row::-webkit-scrollbar {
-    display: none;            /* Chrome, Safari and Opera */
+@media (max-width: 575px) {
+    .package-card {
+        padding: 20px;
+    }
+    
+    .packages-section .container .col {
+        width: 85%;
+        flex: 0 0 85%;
+        min-width: 280px;
+    }
+    
+    .packages-section {
+        padding: 30px 15px;
+    }
 }
 
 /* our Department Section  */
@@ -1475,63 +1552,17 @@ body{
         display: none !important;
     }     
 }
-
-/* ABOUT US SECTION */
-.hero-section {
-    position: relative;
-    height: 300px;
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
-                url('lab-background.jpg') center/cover no-repeat;
-    overflow: hidden;
-}
-
-.hexagon-pattern {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%23f0f0f0" d="M12 2l8.66 5v10L12 22l-8.66-5V7L12 2z"/></svg>');
-    background-size: 50px 50px;
-    opacity: 0.1;
-}
-
-.sidebar {
-    background-color: #662d91;
-    color: white;
-    padding: 20px;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    width: 60px;
-}
-
-.main-content {
-    margin-left: 60px;
-}
-
-.about-title {
-    font-size: 3.5rem;
-    font-weight: bold;
-}
-
-.about-title span:first-child {
-    color: #662d91; /* Purple color */
-}
-
-.about-title span:last-child {
-    color: #0088cc; /* Blue color */
-}
-
-.breadcrumb {
-    margin-bottom: 0;
-}
-
-.breadcrumb-item a {
-    color: #0088cc;
-    text-decoration: none;
-}
-
-.breadcrumb-item.active {
-    color: #666;
+@media (max-width: 480px) {
+    .specialists-section{
+        background-color: var(--primary-light-pink);
+    }    
+    .specialist-card{
+        background: transparent;
+    }
+    .specialist-name{
+    color: var(--primary-blue-name);    
+    }
+    .role{
+        color: var(--primary-purple);
+    }
 }

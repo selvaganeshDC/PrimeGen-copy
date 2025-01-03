@@ -1,57 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About us</title>
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="../css/Global.css" />
-</head>
-<body>
-     <!-- Top Bar -->
-     <div class="container-fluid top-bar">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-3"></div>
-            <div class="col-lg-6 contact-info text-center">
-              <span>Call for Enquiry and Home Collection +91 9499 937 009</span>
-              <a href="#">How home collection works?</a>
-            </div>
-            <div class="col-lg-3 book-btn d-flex justify-content-center gap-3">
-              <button class="btn-book-collection">Book Home Collection</button>
-              <a href="#" class="btn-download-reports">Download Reports</a>
-            </div>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="../css/Global.css" />
+    <link rel="stylesheet" href="../pages/pages.css" />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="container-fluid top-bar">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-6 contact-info text-center">
+            <span>Call for Enquiry and Home Collection +91 9499 937 009</span>
+            <a href="#">How home collection works?</a>
+          </div>
+          <div class="col-lg-3 book-btn d-flex justify-content-center gap-3">
+            <button class="btn-book-collection">Book Home Collection</button>
+            <span class="d-flex align-items-center justify-content-center"><a href="#"
+              class="btn-download-reports">Download Reports</a></span>
           </div>
         </div>
       </div>
-  
-      <!-- Main Navbar -->
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="../Assets/logo.png" alt="PrimeGen Logo" />
-          </a>
-          <div class="mobile-buttons">
-            <button class="btn-book-collection">Book Home Collection</button>
-            <a href="#" class="btn-download-reports">Download Reports</a>
-          </div>
-          <button
-            class="navbar-toggler border-0 p-0"
-            type="button"
-            id="mobileMenuBtn"
-          >
-            <img src="./Assets/menu.png" alt="menu" width="24" height="24" />
-          </button>
-  
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
-              </li>
-              <!-- <li class="nav-item dropdown">
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../Assets/logo.png" alt="PrimeGen Logo" />
+        </a>
+        <div class="mobile-buttons">
+          <button class="btn-book-collection">Book Home Collection</button>
+          <span class="d-flex align-items-center justify-content-center"><a href="#"
+            class="btn-download-reports">Download Reports</a></span>
+        </div>
+        <button
+          class="navbar-toggler border-0 p-0"
+          type="button"
+          id="mobileMenuBtn"
+        >
+          <img src="../Assets/menu.png" alt="menu" width="24" height="24" />
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../HomePage.html">Home</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
               
                 <a
                   class="nav-link dropdown-toggle"
@@ -71,38 +80,38 @@
                   <li><a class="dropdown-item" href="#">News and Events</a></li>
                 </ul>
               </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Packages</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Book a Test</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Franchisee</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Careers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact us</a>
-              </li>
-            </ul>
-          </div>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Packages.html">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Book a Test</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Franchisee.html">Franchisee</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Careers.html">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ContactUs.html">Contact us</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-  
-      <!-- Mobile Menu -->
-      <div class="mobile-overlay"></div>
-      <div class="mobile-menu">
-        <button class="close-button" id="closeMenu">×</button>
-        <a href="#" class="home">Home</a>
-        <!-- <a
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-overlay"></div>
+    <div class="mobile-menu">
+      <button class="close-button" id="closeMenu">×</button>
+      <a href="../HomePage.html" class="home">Home</a>
+      <!-- <a
           href="#"
           class="about-us dropdown-toggle"
           data-bs-toggle="collapse"
@@ -114,37 +123,891 @@
           <a href="#">Awards and Accreditations</a>
           <a href="#">News and Events</a>
         </div> -->
-        <a href="#">About us</a>
-        <a href="#">Services</a>
-        <a href="#">Book a Test</a>
-        <a href="#">Franchisee</a>
-        <a href="#">Services</a>
-        <a href="#">Careers</a>
-        <a href="#">Contact us</a>
-      </div>
+      <a href="#">About us</a>
+      <a href="./Packages.html">Packages</a>
+      <a href="#">Book a Test</a>
+      <a href="./Franchisee.html">Franchisee</a>
+      <a href="./Services.html">Services</a>
+      <a href="./Careers.html">Careers</a>
+      <a href="./ContactUs.html">Contact us</a>
+    </div>
 
-      <section class="main-content">
-        <div class="hero-section d-flex align-items-center">
-            <div class="hexagon-pattern"></div>
-            <div class="container position-relative">
-                <div class="row">
-                    <div class="col-12">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">About Us</li>
-                            </ol>
-                        </nav>
-                        <h1 class="about-title">
-                            <span>ABOUT</span> <span>US</span>
-                        </h1>
+    <!-- Hero Section -->
+    <div class="hero-section-about d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="main-title"><span>ABOUT</span> <span>US</span></h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../HomePage.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  About Us
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PrimeGen Lab -->
+    <section class="primegenlab-section">
+      <div class="container">
+        <div class="row py-2">
+          <!-- Image Column -->
+          <div class="col-lg-6">
+            <div class="video">
+              <a
+                class="btn-video-outer"
+                data-fancybox=""
+                href="https://youtu.be/_Zepjr4MxIo"
+              >
+                <span class="btn-video">
+                  <i class="bi bi-play-fill btn-play"></i>watch video
+                </span>
+              </a>
+              <div class="img">
+                <img src="../Assets/webpage.png" />
+              </div>
+            </div>
+          </div>
+          <!-- Content Column -->
+          <div class="col-lg-6">
+            <div class="ps-lg-4">
+              <h1 class="primegenlab-title mb-4">
+                PrimeGen Healthcare Laboratories Pvt Ltd
+              </h1>
+              <p class="primegenlab-quote mb-4">
+                " an innovation of expert medical professionals dedicated to
+                speciality diagnostics in India "
+              </p>
+              <p class="primegenlab-description mb-4" align="justify">
+                Our Centre is emerging as one of the intricately equipped and
+                highly sophisticated novel diagnostic centre for effective
+                management of precious pregnancies and new born babies. These
+                unique qualities have ushered in immense trust from prestigious
+                medical practitioners and happy parents all over India.
+              </p>
+              <a
+                href="#"
+                class="btn btn-outline-primary rounded-pill cta-button"
+              >
+                View more →
+              </a>
+              <!-- Director Info -->
+              <div class="director-info">
+                <h5 class="director-name">Dr. Sreedhar Mayavan</h5>
+                <p class="director-title mb-0">Managing Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission-Vision -->
+    <section class="mission-vision">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="mission-title">
+                        <span class="text-purple">MISSION</span> <span class="text-blue">& VISION</span>
+                    </h1>
+                    <ul class="mission-list">
+                        <li>Fast, Accurate and Timely reporting</li>
+                        <li>To improve customer satisfaction index</li>
+                        <li>To improve timely services to all patients</li>
+                        <li>To ensure adherence with statutory and regulatory requirements</li>
+                        <li>Continually improve - The Quality Management System</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <!-- Management Section -->
+    <section class="management-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="profile-container">
+                        <div class="blue-circle"></div>
+                        <div class="pink-circle"></div>
+                        <img src="../Assets/dr-sreedhar.png" alt="Dr. Sreedhar Mayavan" class="profile-image img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h1 class="management-title">
+                        <span class="our">OUR </span>
+                        <span class="management">MANAGEMENT</span>
+                    </h1>
+                    <h2 class="doctor-name">Dr. Sreedhar Mayavan, Ph.D (Bioch)</h2>
+                    <div class="profile-text">
+                        <p>Dr. Sreedhar Mayavan leads his team to provide expert guidance that helps the clinician to determine the best treatment for every individual patient. With an experience of over two decades and equipped with skills at the highest level, he immensely contributes to the technological progress in the field of Prenatal and Neonatal Diagnosis.</p>
+                        <p>He has been instrumental to set up the first comprehensive prenatal screening lab in India. His achievement speaks volumes about his experience, skill, expertise and knowledge in the field of speciality diagnostics. His constant quest for excellence and perfection has driven him to set up <a href="#" class="primegen-link">PrimeGen</a> Healthcare Laboratories Private Limited with a mission to provide results of international standard at the highest quality.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="./js/script.js"></script>
-</body>
+    <!-- Why Choose Us -->
+    <section class="why-choose-section">
+        <div class="container py-5">
+            <div class="section-title">
+                <h1><span class="why">Why</span> <span class="choose-us">Choose us</span></h1>
+            </div>
+            <div class="section-subtitle">
+                All analyzes are carried out using modern equipment
+            </div>
+    
+            <div class="row">
+                <!-- Certified Technicians -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card">
+                        <span class="stat-number animate-number" data-target="25">0</span>
+                        <div class="stat-text">Certified Technicians</div>
+                    </div>
+                </div>
+    
+                <!-- Awards -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card">
+                        <span class="stat-number animate-number" data-target="10">0</span>
+                        <div class="stat-text">Awards</div>
+                    </div>
+                </div>
+    
+                <!-- Diagnostic Centers -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card">
+                        <span class="stat-number animate-number" data-target="30">0</span>
+                        <div class="stat-text">Diagnostic Centers</div>
+                    </div>
+                </div>
+    
+                <!-- Years of Experience -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card">
+                        <span class="stat-number animate-number" data-target="20">0</span>
+                        <div class="stat-text">Years of Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Specialists -->
+<section class="specialists-section">
+    <div class="container">
+        <div class="section-title text-center mb-5">
+            <h1>
+                <span class="purple-text">Our</span>
+                <span class="pink-text">Specialists</span>
+            </h1>
+            <p>All analyzes are carried out using modern equipment</p>
+        </div>
+  
+        <div id="specialistsSlider" class="row">
+            <div class="col-3">
+                <div class="specialist-card">
+                    <img src="../Assets/doc-1.png" alt="Dr. Sreedhar Mayavan" class="specialist-img">
+                    <h3 class="specialist-name">Dr. Sreedhar Mayavan</h3>
+                    <p class="specialist-title">Ph.D (Biotech)</p>
+                    <p class="specialist-title">Managing Director</p>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="specialist-card">
+                    <img src="../Assets/doc-2.png" alt="Dr. Ashivin Sreedhar" class="specialist-img">
+                    <h3 class="specialist-name">Dr. Ashivin Sreedhar</h3>
+                    <p class="specialist-title">Ph.D in Human Genetics,</p>
+                    <p class="specialist-title">Founder and Director</p>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="specialist-card">
+                    <img src="../Assets/doc-3.png" alt="S.B. Easwar" class="specialist-img">
+                    <h3 class="specialist-name">S.B. Easwar</h3>
+                    <p class="specialist-title">Vice President - Operations</p>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="specialist-card">
+                    <img src="../Assets/doc-4.png" alt="Dr. Balabhaskar R" class="specialist-img">
+                    <h3 class="specialist-name">Dr. Balabhaskar R</h3>
+                    <p class="specialist-title">Ph.D (Biotech), Consultant Biochemist</p>
+                    <p class="specialist-title">Chief Operations (Tech & Admin)</p>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="specialist-card">
+                    <img src="../Assets/doc-1.png" alt="Dr. Sreedhar Mayavan" class="specialist-img">
+                    <h3 class="specialist-name">Dr. Sreedhar Mayavan</h3>
+                    <p class="specialist-title">Ph.D (Biotech)</p>
+                    <p class="specialist-title">Managing Director</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Awards and Accreditations -->
+  <section class="container py-5">
+    <div class="row g-4">
+      <h1>
+        <span class="purple-text">Awards &</span>
+        <span class="pink-text">Accreditations</span>
+    </h1>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="text-center">
+                <img src="../Assets/primegen-nabl-certificate.jpg" alt="NABL Certificate" class="certificate-img" data-bs-toggle="modal" data-bs-target="#nablModal">
+                <h3 class="certificate-title">NABL Certificate</h3>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="text-center">
+                <img src="../Assets/primegen-iso-certificate.jpg" alt="ISO 9001:2015 Certificate" class="certificate-img" data-bs-toggle="modal" data-bs-target="#isoModal">
+                <h3 class="certificate-title">ISO 9001:2015 Certificate</h3>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="text-center">
+                <img src="../Assets/primegen-cmc-certificate.jpg" alt="CMC EQAS Certificate" class="certificate-img" data-bs-toggle="modal" data-bs-target="#cmcModal">
+                <h3 class="certificate-title">CMC EQAS Certificate</h3>
+            </div>
+        </div>
+        
+        <!-- Second Row -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="text-center">
+                <img src="../Assets/EQAS-Chemistry.jpg" alt="EQAS-Chemistry" class="certificate-img" data-bs-toggle="modal" data-bs-target="#chemistryModal">
+                <h3 class="certificate-title">EQAS-Chemistry</h3>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="text-center">
+                <img src="../Assets/EQAS-Thyroid.jpg" alt="EQAS-Thyroid" class="certificate-img" data-bs-toggle="modal" data-bs-target="#thyroidModal">
+                <h3 class="certificate-title">EQAS-Thyroid</h3>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="text-center">
+                <img src="../Assets/EQAS-Reproductive.jpg" alt="EQAS-Reproductive" class="certificate-img" data-bs-toggle="modal" data-bs-target="#reproductiveModal">
+                <h3 class="certificate-title">EQAS-Reproductive</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modals -->
+<div class="modal fade" id="nablModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">NABL Certificate</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="../Assets/primegen-nabl-certificate.jpg" alt="NABL Certificate" class="modal-img">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="isoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">ISO 9001:2015 Certificate</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="../Assets/primegen-iso-certificate.jpg" alt="ISO Certificate" class="modal-img">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cmcModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">CMC EQAS Certificate</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="../Assets/primegen-cmc-certificate.jpg" alt="CMC EQAS Certificate" class="modal-img">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="chemistryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">EQAS-Chemistry Certificate</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="../Assets/EQAS-Chemistry.jpg" alt="EQAS-Chemistry Certificate" class="modal-img">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="thyroidModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">EQAS-Thyroid Certificate</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="../Assets/EQAS-Thyroid.jpg" alt="EQAS-Thyroid Certificate" class="modal-img">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="reproductiveModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">EQAS-Reproductive Certificate</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="../Assets/EQAS-Reproductive.jpg" alt="EQAS-Reproductive Certificate" class="modal-img">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- News and Events section -->
+<section class="container py-5">
+  <div class="row g-4">
+      <h1 class="mb-4">
+          <span class="purple-text">News &</span>
+          <span class="pink-text">Events</span>
+      </h1>
+
+      <!-- First Row -->
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="text-center">
+              <h3 class="certificate-title">ICMR Approved Covid-19 RT-PCR Test</h3>
+              <img src="../Assets/covid19-rt-pcr.jpg" alt="RT-PCR Test" class="certificate-img" data-bs-toggle="modal" data-bs-target="#rtpcrModal">
+          </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="text-center">
+              <h3 class="certificate-title">Inflammatory Markers For Covid Prognosis</h3>
+              <img src="../Assets/inflammatory-markers.jpg" alt="Inflammatory Markers" class="certificate-img" data-bs-toggle="modal" data-bs-target="#markersModal">
+          </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="text-center">
+              <h3 class="certificate-title">PrimeAarogya-Health Check-Up</h3>
+              <img src="../Assets/prime-aarogya-1.jpg" alt="Health Check-Up" class="certificate-img" data-bs-toggle="modal" data-bs-target="#aarogyaModal">
+          </div>
+      </div>
+
+      <!-- Second Row -->
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="text-center">
+              <h3 class="certificate-title">Blood Marker Covid Test</h3>
+              <img src="../Assets/blood-marker-covid-test.jpg" alt="Blood Marker Test" class="certificate-img mt-lg-4" data-bs-toggle="modal" data-bs-target="#bloodMarkerModal">
+          </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="text-center">
+              <h3 class="certificate-title">World Tuberculosis</h3>
+              <h6>Dated: 24-03-2021</h6>
+              <img src="../Assets/tuberculosis-day.jpg" alt="Tuberculosis Day" class="certificate-img" data-bs-toggle="modal" data-bs-target="#tbModal">
+          </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="text-center">
+              <h3 class="certificate-title">Cancer & Covid</h3>
+              <h6>Dated: 24-03-2021</h6>
+              <img src="../Assets/cancer-covid.jpg" alt="Cancer and Covid" class="certificate-img" data-bs-toggle="modal" data-bs-target="#cancerModal">
+          </div>
+      </div>
+
+      <!-- Third Row -->
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="text-center">
+              <h3 class="certificate-title">World Kidney Day</h3>
+              <h6>Dated: 11-03-2021</h6>
+              <img src="../Assets/kidney-day.jpg" alt="Kidney Day" class="certificate-img" data-bs-toggle="modal" data-bs-target="#kidneyModal">
+          </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="text-center">
+              <h3 class="certificate-title">Women's Day</h3>
+              <h6>Dated: 08-03-2021</h6>
+              <img src="../Assets/womens-day.jpg" alt="Women's Day" class="certificate-img" data-bs-toggle="modal" data-bs-target="#womensModal">
+          </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="text-center">
+              <h3 class="certificate-title">COVID Associated Lab Investigations</h3>
+              <h6>Dated: 06-09-2020</h6>
+              <img src="../Assets/covid-Associated Lab-investigation.jpg" alt="Lab Investigations" class="certificate-img" data-bs-toggle="modal" data-bs-target="#labModal">
+          </div>
+      </div>
+
+      <!-- Fourth Row -->
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="text-center">
+              <h3 class="certificate-title">TAT Pie Chart</h3>
+              <h6>Dated: 10-08-2020</h6>
+              <img src="../Assets/tat-pie-chart-sep.jpg" alt="TAT Pie Chart" class="certificate-img" data-bs-toggle="modal" data-bs-target="#tatModal">
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Modals -->
+<div class="modal fade" id="rtpcrModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">ICMR Approved Covid-19 RT-PCR Test</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="../Assets/covid19-rt-pcr.jpg" alt="NABL Certificate" class="modal-img">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="markersModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Inflammatory Markers For Covid Prognosis</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="../Assets/inflammatory-markers.jpg" alt="ISO Certificate" class="modal-img">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="aarogyaModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">PrimeAarogya-Health Check-Up</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="../Assets/prime-aarogya-1.jpg" alt="CMC EQAS Certificate" class="modal-img">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="bloodMarkerModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Blood Marker Covid Test</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="../Assets/blood-marker-covid-test.jpg" alt="EQAS-Chemistry Certificate" class="modal-img">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="tbModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">World Tuberculosis</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="../Assets/tuberculosis-day.jpg" alt="EQAS-Thyroid Certificate" class="modal-img">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="cancerModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Cancer & Covid</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="../Assets/cancer-covid.jpg" alt="EQAS-Reproductive Certificate" class="modal-img">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="kidneyModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">World Kidney Day</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="../Assets/kidney-day.jpg" alt="World Kidney Day" class="modal-img">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="womensModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Women's Day</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="../Assets/womens-day.jpg" alt="ISO Certificate" class="modal-img">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="labModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">COVID Associated Lab Investigations</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="../Assets/covid-Associated Lab-investigation.jpg" alt="ISO Certificate" class="modal-img">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="tatModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">TAT Pie Chart</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="../Assets/tat-pie-chart-sep.jpg" alt="ISO Certificate" class="modal-img">
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Gallery Section -->
+<div class="container py-4">
+  <!-- Chennai Campaign -->
+  <h2 class="campaign-title">Chennai Campaign</h2>
+  <div class="row g-4 mb-5 justify-content-center">
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <img src="../Assets/img1.jpg" alt="Chennai Campaign 1" class="gallery-img" data-bs-toggle="modal" data-bs-target="#chennai1Modal">
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <img src="../Assets/img2.jpg" alt="Chennai Campaign 2" class="gallery-img" data-bs-toggle="modal" data-bs-target="#chennai2Modal">
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <img src="../Assets/img3.jpg" alt="Chennai Campaign 3" class="gallery-img" data-bs-toggle="modal" data-bs-target="#chennai3Modal">
+      </div>
+  </div>
+
+  <!-- Madurai Campaign -->
+  <h2 class="campaign-title">Madurai Campaign</h2>
+  <div class="row g-4 mb-5 justify-content-center">
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <img src="../Assets/img4.jpg" alt="Madurai Campaign 1" class="gallery-img" data-bs-toggle="modal" data-bs-target="#madurai1Modal">
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <img src="../Assets/img5.jpg" alt="Madurai Campaign 2" class="gallery-img" data-bs-toggle="modal" data-bs-target="#madurai2Modal">
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <img src="../Assets/img6.jpg" alt="Madurai Campaign 3" class="gallery-img" data-bs-toggle="modal" data-bs-target="#madurai3Modal">
+      </div>
+  </div>
+
+  <!-- Tirupati Campaign -->
+  <h2 class="campaign-title">Tirupati Campaign</h2>
+  <div class="row g-4 mb-5 justify-content-center">
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <img src="../Assets/img7.jpg" alt="Tirupati Campaign 1" class="gallery-img" data-bs-toggle="modal" data-bs-target="#tirupati1Modal">
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <img src="../Assets/img8.jpg" alt="Tirupati Campaign 2" class="gallery-img" data-bs-toggle="modal" data-bs-target="#tirupati2Modal">
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <img src="../Assets/img9.jpg" alt="Tirupati Campaign 3" class="gallery-img" data-bs-toggle="modal" data-bs-target="#tirupati3Modal">
+      </div>
+  </div>
+</div>
+
+<!-- Modals -->
+<!-- Chennai Campaign Modals -->
+<div class="modal fade" id="chennai1Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Chennai Campaign</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="../Assets/img1.jpg" alt="Chennai Campaign 1" class="modal-img">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="chennai2Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Chennai Campaign</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="../Assets/img2.jpg" alt="Chennai Campaign 2" class="modal-img">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="chennai3Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Chennai Campaign</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="../Assets/img3.jpg" alt="Chennai Campaign 3" class="modal-img">
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Madurai Campaign Modals -->
+<div class="modal fade" id="madurai1Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Madurai Campaign</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="../Assets/img4.jpg" alt="Madurai Campaign 1" class="modal-img">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="madurai2Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Madurai Campaign</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="../Assets/img5.jpg" alt="Madurai Campaign 2" class="modal-img">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="madurai3Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Madurai Campaign</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="../Assets/img6.jpg" alt="Madurai Campaign 3" class="modal-img">
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Tirupati Campaign Modals -->
+<div class="modal fade" id="tirupati1Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Tirupati Campaign</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="../Assets/img7.jpg" alt="Tirupati Campaign 1" class="modal-img">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="tirupati2Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Tirupati Campaign</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="../Assets/img8.jpg" alt="Tirupati Campaign 2" class="modal-img">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="tirupati3Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Tirupati Campaign</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="../Assets/img9.jpg" alt="Tirupati Campaign 3" class="modal-img">
+          </div>
+      </div>
+  </div>
+</div>
+
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-logo text-center mb-5">
+            <img src="../Assets/logo.png" alt="Company Logo" class="img-fluid">
+        </div>
+        <div class="row">
+            <!-- Information Column -->
+            <div class="col-md-3 mb-4">
+                <h4>INFORMATION</h4>
+                <ul>
+                    <li>
+                        <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                        <span><a href="#">Terms & Conditions</a></span>
+                    </li>
+                    <li>
+                        <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                        <span><a href="#">Privacy Policy</a></span>
+                    </li>
+                    <li>
+                        <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                        <span><a href="#">Cancellation and Refund</a></span>
+                    </li>
+                    <li>
+                        <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                        <span><a href="#">Terms of Service</a></span>
+                    </li>
+                    <li>
+                        <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                        <span><a href="#">Cookie Policy</a></span>
+                    </li>
+                    <li>
+                        <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                        <span><a href="#">Patient Information Consent</a></span>
+                    </li>
+                </ul>
+            </div>
+        
+            <!-- Contacts Column -->
+            <div class="col-md-3 mb-4">
+                <h4>CONTACTS</h4>
+                <div class="contact-info">
+                    <p><i class="bi bi-telephone-fill"></i> +91-44-43596319</p>
+                    <p><i class="bi bi-telephone-fill"></i> +91-44-29530009</p>
+                    <p><i class="bi bi-telephone-fill"></i> +91-44-22670097</p>
+                    <p><i class="bi bi-telephone-fill"></i> +91-9499937009</p>
+                </div>
+                <p>
+                    <i class="bi bi-geo-alt-fill"></i> ShriAshi Tower,<br>
+                    No.30/36, 23rd Street,<br>
+                    Thillai Ganga Nagar,<br>
+                    Nanganallur,<br>
+                    Chennai - 600061
+                </p>
+                <p><i class="bi bi-envelope-fill"></i> info@example.in</p>
+            </div>
+        
+            <!-- Opening Hours Column -->
+            <div class="col-md-3 mb-4 d-flex flex-column justify-content-between">
+                <div class="opening-hours">
+                    <h4>OPENING HOURS</h4>
+                    <p>Mon - Sat: 07:00 to 21:00</p>
+                    <p>Sunday: 07:00 to 19:00</p>
+                </div>
+                <div class="social-icons mt-4">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        
+            <!-- Quick Links Column -->
+            <div class="col-md-3 mb-4">
+              <h4>QUICK LINKS</h4>
+              <ul>
+                  <li>
+                      <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                      <span><a href="./AboutUs.html">About Us</a></span>
+                  </li>
+                  <li>
+                      <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                      <span><a href="./Packages.html">Accreditation</a></span>
+                  </li>
+                  <li>
+                      <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                      <span><a href="./Services.html">Services</a></span>
+                  </li>
+                  <li>
+                      <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                      <span><a href="#">Book a Test</a></span>
+                  </li>
+                  <li>
+                      <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                      <span><a href="./Franchisee.html">Franchisee</a></span>
+                  </li>
+                  <li>
+                      <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                      <span><a href="./Careers.html">Careers</a></span>
+                  </li>
+                  <!-- <li>
+                      <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                      <span><a href="#">Events</a></span>
+                  </li> -->
+                  <li>
+                      <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                      <span><a href="./ContactUs.html">Contact Us</a></span>
+                  </li>
+              </ul>
+          </div>
+        </div>
+        
+
+        <!-- Copyright Section -->
+        <div class="copyright">
+            <p>Copyright © 2024 Your Company Name. All rights reserved.</p>
+            <p>Powered by YourCompany</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
 </html>

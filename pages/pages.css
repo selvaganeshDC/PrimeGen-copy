@@ -1,0 +1,565 @@
+@import url('../css/Global.css');
+
+/* contact us */
+.contact-form {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.send-btn {
+    background-color: var(--primary-pink);
+    border: none;
+    padding: 12px 40px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.send-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.encryption-notice {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+}
+
+/* Contact us SECTION */
+.hero-section-contact {
+    position: relative;
+    height: 400px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
+        url('../Assets/contact-update.jpg') center/cover no-repeat;
+    overflow: hidden;
+}
+
+/* about us */
+.hero-section-about {
+    position: relative;
+    height: 400px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
+        url('../Assets/about-us-banner.jpg') center/cover no-repeat;
+    overflow: hidden;
+}
+
+/* careers */
+.hero-section-career {
+    position: relative;
+    height: 400px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
+        url('../Assets/career-update.jpg') center/cover no-repeat;
+    overflow: hidden;
+}
+
+/* service */
+
+.hero-section-service {
+    position: relative;
+    height: 400px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
+        url('../Assets/our-services-23.03.2022.jpg') center/cover no-repeat;
+    overflow: hidden;
+}
+
+/* franchisee */
+
+.hero-section-franchisee{
+    position: relative;
+    height: 400px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
+        url('../Assets/franchisee-enquiry.jpg') center/cover no-repeat;
+    overflow: hidden;
+}
+
+.main-content {
+    margin-left: 60px;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.main-title span:first-child {
+    color: var(--primary-purple);
+}
+
+.main-title span:last-child {
+    color: var(--primary-pink);
+}
+
+.breadcrumb {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.breadcrumb-item a {
+    color: var(--primary-blue-name);
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover{
+    color: var(--primary-pink);
+}
+
+.breadcrumb-item.active {
+    color: var(--primary-gray);
+}
+
+@media (max-width: 768px) {
+    .hero-section-contact {
+        text-align: center;
+    }
+
+    /* about us */
+    .hero-section-about {
+        text-align: center;
+    }
+
+    /* careers */
+    .hero-section-career {
+        text-align: center;
+    }
+
+    .hero-section-service {
+        text-align: center;
+    }
+    .hero-section-franchisee{
+        text-align: center;
+    }
+
+    .content-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 15px;
+    }
+
+    .breadcrumb {
+        justify-content: center;
+    }
+
+    .about-title {
+        font-size: 3rem;
+        /* Slightly smaller font size for mobile */
+    }
+}
+
+
+/*careers*/
+
+.jobcareer-title {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.jobcareer-title span {
+    letter-spacing: -1.6px;
+    line-height: 0.8;
+    color: #F22283;
+}
+
+
+.intro-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.career-opportunities {
+    margin-top: 40px;
+}
+
+.opportunity-list {
+    list-style: none;
+    padding: 0;
+}
+
+.opportunity-item {
+    background: white;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opportunity-item:hover {
+    background: #f0f0f0;
+    cursor: pointer;
+}
+
+.opportunity-item i {
+    color: #5b308a;
+}
+
+@media (max-width: 768px) {
+    .jobcareer-title {
+        font-size: 36px;
+    }
+
+}
+
+/* Career Content Styles */
+
+.career-description {
+    margin-bottom: 40px;
+}
+
+.career-description p {
+    color: var(--primary-gray);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.career-description a {
+    color: #5b308a;
+    text-decoration: none;
+}
+
+.career-description a:hover {
+    text-decoration: underline;
+}
+
+.career-opportunities h2 {
+    color: #5b308a;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.opportunities-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.opportunities-list ul li {
+    position: relative;
+    padding: 10px 0 10px 20px;
+    color: #333;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.opportunities-list ul li:before {
+    content: "›";
+    position: absolute;
+    left: 0;
+    color: #5b308a;
+    font-weight: bold;
+}
+
+.job-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.job-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.job-card:hover img {
+    transform: scale(1.03);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .opportunities-list {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .career-opportunities h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    /* Additional responsive adjustments */
+    .jobcareer-title {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Awards and Accreditations */
+.certificate-img {
+    cursor: pointer;
+    transition: transform 0.3s;
+    width: 280px;
+    height: 350px;
+}
+.certificate-img:hover {
+    transform: scale(1.05);
+}
+.certificate-title {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.modal-img {
+    width: 100%;
+    height: auto;
+}
+
+/* Gallery section*/
+.campaign-title {
+    text-align: center;
+    color: #333;
+    margin: 2rem 0;
+    font-weight: 600;
+}
+.gallery-img {
+    width: 280px;
+    height: 204px;
+    object-fit: cover;
+    border: 2px solid #0d6efd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+.modal-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.img-container {
+    margin-bottom: 2rem;
+}
+
+
+
+.franchise-opportunities {
+    background-color: #f8f9fa; 
+    color: #333; 
+}
+
+.franchise-opportunities h1 {
+    font-weight: bold;
+}
+.franchise-opportunities .prime-text{
+    color: var(--primary-blue-name);
+}
+.franchise-opportunities .gen-text{
+    color: var(--primary-purple);
+}
+
+.franchise-opportunities p {
+    line-height: 1.8;
+    font-size: large;
+}
+
+.franchise-opportunities .btn-primary {
+    background-color: var(--primary-pink);
+    border-color: var(--primary-pink);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+.franchise-opportunities .btn-primary:hover{
+    background-color: var(--primary-light-pink);
+    color: var(--primary-gray);
+}
+.franchise-opportunities .btn-primary:active{
+    background-color: var(--primary-pink);
+    border-color: var(--primary-pink);
+}
+
+
+
+/* Packages section */
+.health-checkup {
+    padding: 40px 20px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-heading {
+    font-size: clamp(24px, 4vw, 36px);
+    margin-bottom: 15px;
+}
+
+.primary-text {
+    color: #6a1b9a;
+}
+
+.secondary-text {
+    color: #e91e63;
+}
+
+.header-description {
+    color: #666;
+    font-size: clamp(14px, 2vw, 18px);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.package-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.package-wrapper {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.package-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.package-wrapper.success {
+    background-color: var(--card-green);
+}
+
+.package-wrapper.primary {
+    background-color: var(--card-purple);
+}
+
+.package-wrapper.info {
+    background-color: var(--card-blue);
+}
+
+.package-thumbnail {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.package-image {
+    width: 100%;
+    height: auto;
+    max-width: 280px;
+    object-fit: cover;
+}
+
+.package-name {
+    font-size: clamp(20px, 3vw, 24px);
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.package-info {
+    font-size: clamp(14px, 2vw, 16px);
+    margin-bottom: 25px;
+    color: #666;
+    flex-grow: 1;
+    line-height: 1.5;
+}
+
+.package-link {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 1px solid var(--primary-pink);
+    color: var(--primary-pink);
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-size: clamp(14px, 2vw, 16px);
+}
+
+.package-link:hover {
+    background-color: var(--primary-pink);
+    color: #fff;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 992px) {
+    .health-checkup {
+        padding: 50px 30px;
+    }
+
+    .packages-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .health-checkup {
+        padding: 40px 20px;
+    }
+
+    .main-heading {
+        font-size: 28px;
+    }
+
+    .header-description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 575px) {
+    .health-checkup {
+        padding: 30px 15px;
+    }
+
+    .package-wrapper {
+        padding: 20px;
+    }
+
+    .packages-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

@@ -580,3 +580,149 @@
         gap: 20px;
     }
 }
+
+
+/* Mission-Vision */
+.mission-vision {
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../Assets/banner-shape.png);
+}
+
+.mission-title {
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.mission-title .text-purple {
+    color: var(--primary-purple);
+}
+
+.mission-title .text-blue {
+    color: var(--primary-pink);
+}
+
+.mission-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.mission-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.mission-list li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* management-section */
+.management-section {
+    padding: 50px 0;
+    position: relative;
+}
+
+.profile-container {
+    position: relative;
+}
+
+.circle-bg {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.blue-circle {
+    position: absolute;
+    width: 500px;
+    height: 430px;
+    background-color: var(--primary-purple);
+    border-radius: 50%;
+    left: -50px;
+    top: 150px;
+    z-index: 1;
+}
+
+.pink-circle {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #FF1493;
+    border-radius: 50%;
+    left: -20px;
+    top: 150px;
+    z-index: 2;
+}
+
+.profile-image {
+    position: relative;
+    z-index: 3;
+    max-width: 450px;
+    margin-left: 100px;
+}
+
+.management-title {
+    margin-bottom: 30px;
+}
+
+.management-title .our {
+    color: var(--primary-purple);
+}
+
+.management-title .management {
+    color: var(--primary-pink);
+}
+
+.doctor-name {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profile-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.primegen-link {
+    color: #0088cc;
+    text-decoration: none;
+}
+
+.primegen-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    .profile-container{
+        display: none !important;;
+    }
+}
+
+@media (max-width: 768px) {
+    .blue-circle {
+        width: 300px;
+        height: 300px;
+    }
+
+    .profile-image {
+        max-width: 280px;
+        margin-left: 30px;
+    }
+
+    .pink-circle {
+        width: 80px;
+        height: 80px;
+    }
+}

@@ -43,6 +43,13 @@
 }
 
 /* Contact us SECTION */
+.form-control:focus {
+    border-color: var(--primary-pink); 
+    outline: none;
+    box-shadow: 0 0 8px 0 rgba(242, 34, 131, 0.247);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
 .hero-section-contact {
     position: relative;
     height: 400px;

@@ -399,8 +399,18 @@
     background-color: var(--primary-pink);
     border-color: var(--primary-pink);
 }
+.card-footer{
+    background-color: var(--primary-pink);
+}
+.card {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+}
 
-
+.card-body {
+    flex-grow: 1;
+}
 
 /* Packages section */
 .health-checkup {

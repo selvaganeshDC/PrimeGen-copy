@@ -760,7 +760,12 @@ body{
     color: white;
     padding: 50px 0;
 }
-
+.email-footer{
+    color: white;
+    span{
+        margin-right: 5px;
+    }
+} 
 .footer h4 {
     color: white;
     font-size: 22px;

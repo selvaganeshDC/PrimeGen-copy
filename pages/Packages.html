@@ -1,219 +1,2549 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Packages</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/Global.css">
-    <link rel="stylesheet" href="./pages.css">
-
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Test Packages</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <link rel="stylesheet" href="./pages.css" />
+  </head>
+  <body>
+    <!-- Top Bar -->
     <div class="container-fluid top-bar">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-6 contact-info text-center">
-                    <span>Call for Enquiry and Home Collection +91 9499 937 009</span>
-                    <a href="#">How home collection works?</a>
-                </div>
-                <div class="col-lg-3 book-btn d-flex justify-content-center gap-3">
-                    <button class="btn-book-collection">Book Home Collection</button>
-                    <span class="d-flex align-items-center justify-content-center"><a href="#"
-                        class="btn-download-reports">Download Reports</a></span>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-6 contact-info text-center">
+            <span>Call for Enquiry and Home Collection +91 9499 937 009</span>
+            <a href="#">How home collection works?</a>
+          </div>
+          <div class="col-lg-3 book-btn d-flex justify-content-center gap-3">
+            <button class="btn-book-collection">Book Home Collection</button>
+            <span class="d-flex align-items-center justify-content-center"
+              ><a href="#" class="btn-download-reports"
+                >Download Reports</a
+              ></span
+            >
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Main Navbar -->
     <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="../Assets/logo.png" alt="PrimeGen Logo">
-            </a>
-            <div class="mobile-buttons">
-                <button class="btn-book-collection">Book Home Collection</button>
-                <span class="d-flex align-items-center justify-content-center"><a href="#"
-                    class="btn-download-reports">Download Reports</a></span>
-            </div>
-            <button class="navbar-toggler border-0 p-0" type="button" id="mobileMenuBtn">
-                <img src="../Assets/menu.png" alt="menu" width="24" height="24">
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../HomePage.html">Home</a>
-                    </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            About us
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Awards and Accreditations</a></li>
-                            <li><a class="dropdown-item" href="#">News and Events</a></li>
-                        </ul>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="./AboutUs.html">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./Services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Packages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Book a Test</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./Franchisee.html">Franchisee</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./Careers.html">Careers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./ContactUs.html">Contact us</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../Assets/logo.png" alt="PrimeGen Logo" />
+        </a>
+        <div class="mobile-buttons">
+          <button class="btn-book-collection">Book Home Collection</button>
+          <span class="d-flex align-items-center justify-content-center"
+            ><a href="#" class="btn-download-reports">Download Reports</a></span
+          >
         </div>
+        <button
+          class="navbar-toggler border-0 p-0"
+          type="button"
+          id="mobileMenuBtn"
+        >
+          <img src="../Assets/menu.png" alt="menu" width="24" height="24" />
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../HomePage.html">Home</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+            
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About us
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Awards and Accreditations</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">News and Events</a></li>
+              </ul>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="./AboutUs.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./Packages.html">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Book a Test</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Franchisee.html">Franchisee</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Careers.html">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ContactUs.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <!-- Mobile Menu -->
     <div class="mobile-overlay"></div>
     <div class="mobile-menu">
-        <button class="close-button" id="closeMenu">×</button>
-        <a href="../HomePage.html">Home</a>
-        <!-- <a
-        href="#"
-        class="about-us dropdown-toggle"
-        data-bs-toggle="collapse"
-        data-bs-target="#aboutSubmenu"
-      >
-        About us
-      </a>
-      <div class="collapse submenu" id="aboutSubmenu">
-        <a href="#">Awards and Accreditations</a>
-        <a href="#">News and Events</a>
-      </div> -->
-        <a href="./AboutUs.html">About us</a>
-        <a href="./Packages.html" class="home">Packages</a>
-        <a href="#">Book a Test</a>
-        <a href="./Franchisee.html">Franchisee</a>
-        <a href="./Services.html">Services</a>
-        <a href="./Careers.html">Careers</a>
-        <a href="./ContactUs.html">Contact us</a>
-    </div>
- 
-   <!-- Health Packages Section -->
-    <section class="health-checkup">
-    <div class="wrapper">
-    <div class="section-header">
-        <h1 class="main-heading">
-            <span class="primary-text">Master Health</span>
-            <span class="secondary-text">Checkup Packages</span>
-        </h1>
-        <p class="header-description">
-            Our Health Checkup packages offer you a wide range of screening
-            programmes to suit individual needs.
-        </p>
+      <button class="close-button" id="closeMenu">×</button>
+      <a href="../HomePage.html">Home</a>
+      <!-- <a
+    href="#"
+    class="about-us dropdown-toggle"
+    data-bs-toggle="collapse"
+    data-bs-target="#aboutSubmenu"
+  >
+    About us
+  </a>
+  <div class="collapse submenu" id="aboutSubmenu">
+    <a href="#">Awards and Accreditations</a>
+    <a href="#">News and Events</a>
+  </div> -->
+      <a href="./AboutUs.html">About us</a>
+      <a href="./Packages.html" class="home">Packages</a>
+      <a href="#">Book a Test</a>
+      <a href="./Franchisee.html">Franchisee</a>
+      <a href="./Services.html">Services</a>
+      <a href="./Careers.html">Careers</a>
+      <a href="./ContactUs.html">Contact us</a>
     </div>
 
-    <div class="packages-grid">
-        <!-- Basic Health Package -->
-        <div class="package-item">
-            <div class="package-wrapper success">
-                <div class="package-thumbnail">
-                    <img src="../Assets/master-health.png" alt="Basic Health Package" class="package-image">
+    <!-- Packages test section -->
+    <section class="container package-test-container mt-5">
+      <h4 class="page-title">Packages</h4>
+
+      <div class="search-container mb-4">
+        <input
+          type="text"
+          class="form-control search-input"
+          placeholder="Search by Test name"
+          id="search-input"
+        />
+        <svg
+          class="search-icon"
+          width="20"
+          height="20"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+          />
+        </svg>
+      </div>
+
+      <div class="accordion" id="testPackages">
+        <!-- Thyroid Profile -->
+        <div class="card" data-test-name="thyroid Profile">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#thyroidProfile"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
                 </div>
-                <h3 class="package-name">Master Health<br>Packages</h3>
-                <p class="package-info">
-                    A set of basic tests that can give a broad overview of your
-                    health status.
-                </p>
-                <a href="#" class="package-link">View more</a>
+                <div class="test-info">
+                  <i class="package-icon">🔬</i>
+                  <div>
+                    <span class="package-title">Thyroid Profile</span>
+                    <span class="test-count">(3 Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="thyroidProfile"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>T3</p>
+              <p>T4</p>
+              <p>Thyroid Stimulating Hormone (TSH)</p>
             </div>
+          </div>
         </div>
 
-        <!-- Women's Health Package -->
-        <div class="package-item">
-            <div class="package-wrapper primary">
-                <div class="package-thumbnail">
-                    <img src="../Assets/well-women.png" alt="Women's Health Package" class="package-image">
+        <!-- Lipid Profile -->
+        <div class="card" data-test-name="lipid Profile">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#lipidProfile"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
                 </div>
-                <h3 class="package-name">Well Women<br>Packages</h3>
-                <p class="package-info">
-                    Happy Women's Day! Benefit from our colourful Well Women Health
-                    Checkups.
-                </p>
-                <a href="#" class="package-link">View more</a>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title">Lipid Profile</span>
+                    <span class="test-count">(6 Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="lipidProfile"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>Total Cholesterol</p>
+              <p>Triglycerides</p>
+              <p>HDL Cholesterol</p>
+              <p>LDL Cholesterol</p>
+              <p>VLDL Cholesterol</p>
+              <p>TC/HDL Ratio</p>
             </div>
+          </div>
         </div>
 
-        <!-- Elderly Care Package -->
-        <div class="package-item">
-            <div class="package-wrapper info">
-                <div class="package-thumbnail">
-                    <img src="../Assets/senior-citizen.png" alt="Elderly Care Package" class="package-image">
+        <div class="card" data-test-name="Preliminary Health Checkup">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#Preliminary"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
                 </div>
-                <h3 class="package-name">Senior Citizen<br>Packages</h3>
-                <p class="package-info">
-                    If you are over 60, this is the health checkup package you need.
-                </p>
-                <a href="#" class="package-link">View more</a>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title"
+                      >Preliminary Health Checkup</span
+                    >
+                    <span class="test-count">(44 Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div id="Preliminary" class="collapse" data-bs-parent="#testPackages">
+            <div class="test-details">
+              <p>FBS</p>
+              <p>TSH</p>
+              <p>CBC(20)</p>
+              <p>Total Cholesterol</p>
+              <p>Urine Complete Analysis(21)</p>
             </div>
+          </div>
         </div>
 
-        <!-- Basic Health Package -->
-        <div class="package-item">
-            <div class="package-wrapper success">
-                <div class="package-thumbnail">
-                    <img src="../Assets/master-health.png" alt="Basic Health Package" class="package-image">
+        <div class="card" data-test-name="Liver Function Test">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#LiverFunctionTest"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
                 </div>
-                <h3 class="package-name">Master Health<br>Packages</h3>
-                <p class="package-info">
-                    A set of basic tests that can give a broad overview of your
-                    health status.
-                </p>
-                <a href="#" class="package-link">View more</a>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title">Liver Function Test</span>
+                    <span class="test-count">(10 Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="LiverFunctionTest"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>SGOT</p>
+              <p>SGPT</p>
+              <p>Globin</p>
+              <p>Albumin</p>
+              <p>Total Protein</p>
+              <p>Bilirubin-Total</p>
+              <p>Bilirubin-Direct</p>
+              <p>Bilirubin-Indirect</p>
+              <p>Albumin/Globin Ratio</p>
             </div>
+          </div>
         </div>
 
-        <!-- Women's Health Package -->
-        <div class="package-item">
-            <div class="package-wrapper primary">
-                <div class="package-thumbnail">
-                    <img src="../Assets/well-women.png" alt="Women's Health Package" class="package-image">
+        <div class="card" data-test-name="Kidney Function Test">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#KidneyFunctionTest"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
                 </div>
-                <h3 class="package-name">Well Women<br>Packages</h3>
-                <p class="package-info">
-                    Happy Women's Day! Benefit from our colourful Well Women Health
-                    Checkups.
-                </p>
-                <a href="#" class="package-link">View more</a>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title">Kidney Function Test</span>
+                    <span class="test-count">(7 Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="KidneyFunctionTest"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>BUN</p>
+              <p>Urea</p>
+              <p>Sodium</p>
+              <p>Calcium</p>
+              <p>Chloride</p>
+              <p>Uric Acid</p>
+              <p>Creatinine</p>
             </div>
+          </div>
         </div>
 
-        <!-- Elderly Care Package -->
-        <div class="package-item">
-            <div class="package-wrapper info">
-                <div class="package-thumbnail">
-                    <img src="../Assets/senior-citizen.png" alt="Elderly Care Package" class="package-image">
+        <div class="card" data-test-name="Complete Blood Count Test">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#CompleteBloodCount"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
                 </div>
-                <h3 class="package-name">Senior Citizen<br>Packages</h3>
-                <p class="package-info">
-                    If you are over 60, this is the health checkup package you need.
-                </p>
-                <a href="#" class="package-link">View more</a>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title">Complete Blood Count Test</span>
+                    <span class="test-count">(20 Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="CompleteBloodCount"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>Hb</p>
+              <p>RBC</p>
+              <p>WBC-TC</p>
+              <p>WBC-DC</p>
+              <p>PCV</p>
+              <p>PLT</p>
+              <p>Mean Corpuscular Volume (MCV)</p>
+              <p>Mean Corpuscular Haemoglobin (MCH)</p>
+              <p>Mean Corpuscular Haemoglobin Concentration (MCHC)</p>
+              <p>Absolute Neutrophil Count (ANC)</p>
+              <p>Absolute Eosinophil Count (AEC)</p>
+              <p>Absolute Lymphocyte Count (ALC)</p>
+              <p>Absolute Monocyte Count (AMC)</p>
+              <p>Absolute Basophils Count (ABC)</p>
+              <p>Platelet Distribution With (PDW)</p>
+              <p>Mean Platelet Volume (MPV)</p>
+              <p>Red Blood Cell Distribution width -SD (RDW-SD)</p>
+              <p>Red Blood Cell Distribution width -CV (RDW-CV)</p>
+              <p>Platelet Larger Cell Ratio (P-LCR)</p>
+              <p>Platelercrit (PCT)</p>
             </div>
+          </div>
         </div>
+
+        <div class="card" data-test-name="Basic Health Checkup">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#BasicHealthCheckup"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title">Basic Health Checkup</span>
+                    <span class="test-count">(48 Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="BasicHealthCheckup"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>TSH</p>
+              <p>FBS</p>
+              <p>CBC (20)</p>
+              <p>Lipid Profile (7)</p>
+              <p>Liver Function Test (11)</p>
+              <p>Kidney Function Test (8)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-test-name="Elite Full Body Checkup">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#EliteFullBodyCheckup"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title">Elite Full Body Checkup</span>
+                    <span class="test-count">(70 Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="EliteFullBodyCheckup"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>Thyroid Test (3)</p>
+              <p>Haemogram (20)</p>
+              <p>Lipid Profile-Basic (7)</p>
+              <p>Diabetic Screening (1)</p>
+              <p>Liver Function Test (11)</p>
+              <p>Urine Complete Analysis (21)</p>
+              <p>Renal/Kidney Function Test (7)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-test-name="Arthritis Basic Screening">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#ArthritisBasicScreening"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title">Arthritis Basic Screening</span>
+                    <span class="test-count">(70 Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="ArthritisBasicScreening"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>(26 Tests)</p>
+              <p>SGOT</p>
+              <p>SGPT</p>
+              <p>Uric Acid</p>
+              <p>Creatinine</p>
+              <p>C-Reactive Protein</p>
+              <p>CBC-Comprehensive (20)</p>
+              <p>Erythrocyte Sedimentation Rate</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-test-name="Diabetic Screening">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#DiabeticScreening"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title">Diabetic Screening</span>
+                    <span class="test-count">(55 Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="DiabeticScreening"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>Urea (1)</p>
+              <p>HbA1c (1)</p>
+              <p>CBC- (20)</p>
+              <p>Creatinine (1)</p>
+              <p>Urine Creatinine (1)</p>
+              <p>Blood Glucose-PPBS (1)</p>
+              <p>Lipid Profile-Basic (6)</p>
+              <p>Blood Glucose-Fasting (1)</p>
+              <p>Urine Microalbumin (1)</p>
+              <p>Urine Complete Analysis (21)</p>
+              <p>Urine Microalbumin: Creatinine Ratio (1)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-test-name="Alcohol Impact Checkup">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#AlcoholImpactCheckup"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title">Alcohol Impact Checkup</span>
+                    <span class="test-count">(49 Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="AlcoholImpactCheckup"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>Vitamin B12</p>
+              <p>Diabetic Screening-(2)</p>
+              <p>Renal/Kidney Function-(8)</p>
+              <p>Comprehensive (CBC)+ESR (22)</p>
+              <p>HbA1c Lipid Profile-Basic (6)</p>
+              <p>Liver Function Test-Basic (10)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-test-name="Coagulation Package">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#CogulationPackage"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title">Coagulation Package</span>
+                    <span class="test-count">( Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="CogulationPackage"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>Bleeding Time Clotting Time</p>
+              <p>Partial Thromboplastin Time (PTT) / APTT</p>
+              <p>Platelet Count/ Plt Count</p>
+              <p>Prothrombin Time-PT</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="card" data-test-name="Coagulation Package">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#CogulationPackage"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title">Coagulation Package</span>
+                    <span class="test-count">( Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="CogulationPackage"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>Bleeding Time Clotting Time</p>
+              <p>Partial Thromboplastin Time (PTT) / APTT</p>
+              <p>Platelet Count/ Plt Count</p>
+              <p>Prothrombin Time-PT</p>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="card" data-test-name="Allergy Panel Food Basic">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#AllergyPanelFoodBasic"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title">Allergy Panel Food Basic</span>
+                    <span class="test-count">( Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="AllergyPanelFoodBasic"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>ALLERGY PROFILE – FOOD</p>
+              <p>Complete Blood Count</p>
+              <p>Immunoglobulin E - Total</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-test-name="Iron Profile">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#IronProfile"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title">Iron Profile</span>
+                    <span class="test-count">( Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div id="IronProfile" class="collapse" data-bs-parent="#testPackages">
+            <div class="test-details">
+              <p>Ferritin</p>
+              <p>Iron + TIBC</p>
+              <p>Transferrin Saturation</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-test-name="Allergy Panel Inhalation Respiratory Comprehensive">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#AllergyPanelInhalation"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title"
+                      >Allergy Panel Inhalation Respiratory Comprehensive</span
+                    >
+                    <span class="test-count">( Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="AllergyPanelInhalation"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>ALLERGY PROFILE - INHALATION / RESPIRATORY (COMPREHENSIVE)</p>
+              <p>Complete Blood Count</p>
+              <p>Immunoglobulin E - Total</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-test-name="Torch Profile (igm)">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#TorchProfile"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title">Torch Profile (igm)</span>
+                    <span class="test-count">( Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="TorchProfile"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>(Obs)CMV (Cytomegalovirus) - IgM Antibody</p>
+              <p>(Obs)HSV 1 2 (Herpes Simplex Virus 1 2) - IgM Antibodies</p>
+              <p>Rubella IgM</p>
+              <p>Toxoplasma - IgM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-test-name="Comprehensive Plus">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#ComprehensivePlus"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title">Comprehensive Plus</span>
+                    <span class="test-count">(70 Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="ComprehensivePlus"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>Vitamins (2)</p>
+              <p>Blood Sugar (2)</p>
+              <p>Thyroid Test (3)</p>
+              <p>Pancreas tests (2)</p>
+              <p>Renal/Kidney Function-(8)</p>
+              <p>Hemogram Comprehensive (22)</p>
+              <p>Urine Complete Analysis (21)</p>
+              <p>Liver Function Test-Basic (10)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-test-name="Comprehensive Full Body Checkup">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#ComprehensiveFullBodyCheckup"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title"
+                      >Comprehensive Full Body Checkup</span
+                    >
+                    <span class="test-count">(77 Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="ComprehensiveFullBodyCheckup"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>PS</p>
+              <p>T3</p>
+              <p>T4</p>
+              <p>FBS</p>
+              <p>TSH</p>
+              <p>HbA1c</p>
+              <p>CBC (20)</p>
+              <p>Iron Profile (4)</p>
+              <p>Lipid Profile (7)</p>
+              Liver Function Test (11)
+              <p>Kidney Function Test (8)</p>
+              <p>Urine Complete Analysis (21)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-test-name="Comprehensive full body checkup with Vitamin D">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#ComprehensiveFullBodyCheckupVitaminD"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title"
+                      >Comprehensive full body checkup with Vitamin D</span
+                    >
+                    <span class="test-count">(78 Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="ComprehensiveFullBodyCheckupVitaminD"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>PS</p>
+              <p>T3</p>
+              <p>T4</p>
+              <p>FBS</p>
+              <p>TSH</p>
+              <p>HbA1c</p>
+              <p>CBC (20)</p>
+              <p>Vitamin D</p>
+              <p>Vitamin B12</p>
+              <p>Iron Profile (4)</p>
+              <p>Lipid Profile (7)</p>
+              Liver Function Test (11)
+              <p>Kidney Function Test (8)</p>
+              <p>Urine Complete Analysis (21)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-test-name="Master full body checkup with Cancer & Arthritis
+        Screening [Male]">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#ArthritisScreeningMale"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title"
+                      >Master full body checkup with Cancer & Arthritis
+                      Screening [Male]</span
+                    >
+                    <span class="test-count">(85 Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="ArthritisScreeningMale"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>PS</p>
+              <p>T3</p>
+              <p>T4</p>
+              <p>FBS</p>
+              <p>TSH</p>
+              <p>ESR</p>
+              <p>HbA1c</p>
+              <p>PSA</p>
+              <p>CBC (20)</p>
+              <p>RA Factor</p>
+              <p>Vitamin D</p>
+              <p>Vitamin B12</p>
+              <p>Electrolytes (3)</p>
+              <p>Iron Profile (4)</p>
+              <p>Lipid Profile (7)</p>
+              <p>Liver Function Test (11)</p>
+              <p>Kidney Function Test (8)</p>
+              <p>Urine Complete Analysis (21)</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-test-name="Master full body checkup with Cancer & Arthritis
+        Screening [Male]">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#ArthritisScreeningFemale"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">🩺</i>
+                  <div>
+                    <span class="package-title"
+                      >Master full body checkup with Cancer & Arthritis
+                      Screening [Male]</span
+                    >
+                    <span class="test-count">(85 Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="ArthritisScreeningFemale"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>PS</p>
+              <p>T3</p>
+              <p>T4</p>
+              <p>FBS</p>
+              <p>TSH</p>
+              <p>ESR</p>
+              <p>HbA1c</p>
+              <p>CA125</p>
+              <p>CBC (20)</p>
+              <p>RA Factor</p>
+              <p>Vitamin D</p>
+              <p>Vitamin B12</p>
+              <p>Electrolytes (3)</p>
+              <p>Iron Profile (4)</p>
+              <p>Lipid Profile (7)</p>
+              <p>Liver Function Test (11)</p>
+              <p>Kidney Function Test (8)</p>
+              <p>Urine Complete Analysis (21)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-test-name="Covid Health Check">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#CovidHealthCheck"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">💉</i>
+                  <div>
+                    <span class="package-title">Covid Health Check</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="CovidHealthCheck"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>NTERLEUKIN-6, IL-6</p>
+              <p>ANTI-SARS-COV-2 IGG</p>
+              <p>COMPLETE BLOOD COUNT (CBC)</p>
+              <p>SGPT</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-test-name="ResumeWork">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#ResumeWork"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">💉</i>
+                  <div>
+                    <span class="package-title">ResumeWork</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div id="ResumeWork" class="collapse" data-bs-parent="#testPackages">
+            <div class="test-details">
+              <p>CBC</p>
+              <p>SGPT</p>
+              <p>Creatinine</p>
+              <p>CRP</p>
+              <p>ANTI-SARS-COV-2 IGG</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-test-name="Vitamin Package">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#VitaminPackage"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">💉</i>
+                  <div>
+                    <span class="package-title">Vitamin Package</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="VitaminPackage"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>VITAMIN D - 25 HYDROXY (D2+D3)VITAMIN B12</p>
+              <p>CALCIUM -SERUM</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-test-name="Covid Shield">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#CovidShield"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">💉</i>
+                  <div>
+                    <span class="package-title">Covid Shield</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div id="CovidShield" class="collapse" data-bs-parent="#testPackages">
+            <div class="test-details">
+              <p>RENAL PROFILE/RENAL FUNCTION TEST (RFT/KFT)</p>
+              <p>LIVER FUNCTION TEST (LFT)</p>
+              <p>C-REACTIVE PROTEIN CRP (QUANTITATIVE)</p>
+              <p>COMPLETE BLOOD COUNT (CBC)</p>
+              <p>ANTI-SARS-COV-2 IGG</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-test-name="Immunity Health Checkup">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#ImmunityHealthCheckup "
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">💉</i>
+                  <div>
+                    <span class="package-title">Immunity Health Checkup</span>
+                    <span class="test-count">(24 Tests)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="ImmunityHealthCheckup"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>ESR(1)</p>
+              <p>Thyroid Test (1)</p>
+              <p>Blood Sugar (1)</p>
+              <p>Cholesterol Total (1)</p>
+              <p>Complete Blood Count (20)</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-test-name="Senior Citizen Health Checkup">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#SeniorCitizenHealthCheckup"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">💉</i>
+                  <div>
+                    <span class="package-title"
+                      >Senior Citizen Health Checkup</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="SeniorCitizenHealthCheckup"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>Calcium</p>
+              <p>Complete Blood Count with ESR</p>
+              <p>CONSULTATION</p>
+              <p>Creatinine</p>
+              <p>E.C.G</p>
+              <p>ECHOCARDIOGRAPHY</p>
+              <p>Electrolytes (NA K CL)</p>
+              <p>Glucose Postprandial</p>
+              <p>Glucose Fasting</p>
+              <p>Glycosylated Haemoglobin (HbA1c)</p>
+              <p>Lipid Profile</p>
+              <p>Liver Function Test</p>
+              <p>Stool Analysis - Routine</p>
+              <p>Stool for Occult Blood</p>
+              <p>Thyroid Stimulating Hormone- TSH</p>
+              <p>Total Prostate Specific Antigen - PSA</p>
+              <p>Urea</p>
+              <p>Uric Acid</p>
+              <p>Urine Complete Analysis</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-test-name="Standard Wellness">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#StandardWellness"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">💉</i>
+                  <div>
+                    <span class="package-title">Standard Wellness</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="StandardWellness"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>Amylase</p>
+              <p>Blood Urea Nitrogen (BUN)</p>
+              <p>Calcium</p>
+              <p>Complete Blood Count</p>
+              <p>Creatinine</p>
+              <p>Free T4</p>
+              <p>GFR Study(GLOMERULAR FILTRATION RATE) Blood</p>
+              <p>Glucose Random</p>
+              <p>Glycosylated Haemoglobin (HbA1c)</p>
+              <p>HIGH SENSITIVE TROPONIN I</p>
+              <p>Lipase</p>
+              <p>Lipid Profile</p>
+              <p>Liver Function Test</p>
+              <p>Magnesium</p>
+              <p>PHOSPOROUS</p>
+              <p>Thyroid Stimulating Hormone- TSH</p>
+              <p>Urea</p>
+              <p>Uric Acid</p>
+              <p>Vitamin D3 (25 hydroxy cholecalciferol)</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-test-name="Obesity Comprehensive">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#ObesityComprehensive"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">💉</i>
+                  <div>
+                    <span class="package-title">Obesity Comprehensive</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="ObesityComprehensive"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>Complete Blood Count ESR</p>
+              <p>Cortisol-8 am</p>
+              <p>Creatinine</p>
+              <p>DHEA - Sulphate</p>
+              <p>Electrolytes(NA K CL)</p>
+              <p>Ferritin</p>
+              <p>Follicle Stimulating Hormone(FSH)</p>
+              <p>GFR STUDY(GLOMERULAR FILTRATION RATE)- BLOOD</p>
+              <p>Glucose Fasting</p>
+              <p>Glycosylated Haemoglobin (HbA1c)</p>
+              <p>Human Growth Hormone/GH</p>
+              <p>Insulin - fasting</p>
+              <p>Leutinising Hormone (LH)</p>
+              <p>Lipid Profile</p>
+              <p>Liver Function Test</p>
+              <p>Prolactin</p>
+              <p>Protein / Creatinine Ratio - Urine - Spot Sample</p>
+              <p>Testosterone Panel</p>
+              <p>Thyroid Profile/ TFT( T3 T4 TSH)</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-test-name="Infertility Package Male">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#InfertilityPackageMale"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">💉</i>
+                  <div>
+                    <span class="package-title">Infertility Package Male</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="InfertilityPackageMale"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>Complete Blood Count ESR</p>
+              <p>Free Testosterone</p>
+              <p>Glucose Fasting</p>
+              <p>Prolactin</p>
+              <p>Semen Analysis</p>
+              <p>Sex Hormone Binding Globulin -SHBG</p>
+              <p>Testosterone</p>
+              <p>Urine Complete Analysis</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-test-name="Infertility Package Female">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#InfertilityPackageFemale"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">💉</i>
+                  <div>
+                    <span class="package-title"
+                      >Infertility Package Female</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="InfertilityPackageFemale"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>Estradiol / Oestrogen / E2</p>
+              <p>Follicle Stimulating Hormone (FSH)</p>
+              <p>Free T3 Free T4 TSH / Free TFT</p>
+              <p>FSH LH PROLACTIN</p>
+              <p>Glucose Fasting</p>
+              <p>Urine Complete Analysis</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-test-name="Bad Obstetric History Profile(Boh Profile)">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#BadObstetricHistoryProfile"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">💉</i>
+                  <div>
+                    <span class="package-title"
+                      >Bad Obstetric History Profile(Boh Profile)</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="BadObstetricHistoryProfile"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>Anti Cardiolipin Antibody(ACL) - IgG</p>
+              <p>Anti Cardiolipin Antibody(ACL) - IgM</p>
+              <p>Anti Nuclear Antibodies - ANA (ELISA)</p>
+              <p>Anti Phospholipid Antibody(APA) - IgM</p>
+              <p>Free T3 Free T4 TSH / Free TFT</p>
+              <p>Glucose Tolerance Test - (3 samples)</p>
+              <p>Glycosylated Haemoglobin (HbA1c)</p>
+              <p>Lipid Profile</p>
+              <p>LUPUS ANTICOAGULANT (LA1 LA2)</p>
+              <p>TORCH PROFILE - IgM</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-test-name="Cardiac Injury Package">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#CardiacInjuryPackage"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">💉</i>
+                  <div>
+                    <span class="package-title">Cardiac Injury Package</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="CardiacInjuryPackage"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>Aspartate Aminotransferase(AST/SGOT)</p>
+              <p>Creatinine Kinase MB/ Creatinine Phosphokinase MB (CK-MB)</p>
+              <p>Creatinine Kinase/Creatinine Phosphokinase (CK/CPK)</p>
+              <p>E.C.G</p>
+              <p>Lactate Dehydrogenase (LDH)</p>
+              <p>Troponin T</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-test-name="Hyper Tension Basic">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#HyperTensionBasic"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">💉</i>
+                  <div>
+                    <span class="package-title">Hyper Tension Basic</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="HyperTensionBasic"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>Calcium</p>
+              <p>Complete Blood Count with ESR</p>
+              <p>Creatinine</p>
+              <p>Electrolytes (NA K CL)</p>
+              <p>GFR STUDY(GLOMERULAR FILTRATION RATE)- BLOOD</p>
+              <p>Glucose - Random</p>
+              <p>Glycosylated Haemoglobin (HbA1c)</p>
+              <p>High Sensitive CRP/ hsCRP ( Quantitative)</p>
+              <p>Lipid Profile</p>
+              <p>Protein / Creatinine Ratio - Urine - Spot Sample</p>
+              <p>Thyroid Profile/ TFT( T3 T4 TSH)</p>
+              <p>Urea</p>
+              <p>Uric Acid</p>
+              <p>Urine Complete Analysis</p>
+              <p>VITAL</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-test-name="Hyper Tension Comprehensive">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#HyperTensionComprehensive"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">💉</i>
+                  <div>
+                    <span class="package-title"
+                      >Hyper Tension Comprehensive</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="HyperTensionComprehensive"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>Calcium</p>
+              <p>Complete Blood Count with ESR</p>
+              <p>Cortisol-8 am</p>
+              <p>Creatinine</p>
+              <p>E.C.G</p>
+              <p>Electrolytes (NA K CL)</p>
+              <p>GFR STUDY(GLOMERULAR FILTRATION RATE)- BLOOD</p>
+              <p>Glucose Fasting</p>
+              <p>Glycosylated Haemoglobin (HbA1c)</p>
+              <p>HIGH SENSITIVE TROPONIN I</p>
+              <p>Lipid Profile</p>
+              <p>Protein / Creatinine Ratio - Urine - Spot Sample</p>
+              <p>Thyroid Profile/ TFT( T3 T4 TSH)</p>
+              <p>Urea</p>
+              <p>Uric Acid</p>
+              <p>Urine Complete Analysis</p>
+              <p>VITAL</p>
+              <p>Vitamin D3 (25 hydroxy cholecalciferol)</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-test-name="Obesity Basic">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#ObesityBasic"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">💉</i>
+                  <div>
+                    <span class="package-title">Obesity Basic</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="ObesityBasic"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>Complete Blood Count with ESR</p>
+              <p>Creatinine</p>
+              <p>GFR STUDY(GLOMERULAR FILTRATION RATE)- BLOOD</p>
+              <p>Glucose Fasting</p>
+              <p>Glycosylated Haemoglobin (HbA1c)</p>
+              <p>Lipid Profile</p>
+              <p>Liver Function Test</p>
+              <p>Protein / Creatinine Ratio - Urine - Spot Sample</p>
+              <p>Thyroid Profile/ TFT( T3 T4 TSH)</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-test-name="Smokers Basic">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#SmokersBasic"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">💉</i>
+                  <div>
+                    <span class="package-title">Smokers Basic</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="SmokersBasic"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>Complete Haemogram</p>
+              <p>Creatinine</p>
+              <p>GFR STUDY(GLOMERULAR FILTRATION RATE)- BLOOD</p>
+              <p>Glucose-random</p>
+              <p>Glycosylated Haemoglobin (HbA1c)</p>
+              <p>HIGH SENSITIVE TROPONIN I</p>
+              <p>Lipid Profile</p>
+              <p>Liver Function Test</p>
+              <p>Urea</p>
+              <p>VITAL</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-test-name="Smokers Comprehensive">
+          <div class="card-header">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#SmokersComprehensive"
+            >
+              <div class="left-content">
+                <div class="collapse-indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+                <div class="test-info">
+                  <i class="package-icon">💉</i>
+                  <div>
+                    <span class="package-title">Smokers Comprehensive</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-checkbox-container">
+                <span class="price">₹ 250</span>
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  onclick="event.stopPropagation();"
+                />
+              </div>
+            </button>
+          </div>
+          <div
+            id="SmokersComprehensive"
+            class="collapse"
+            data-bs-parent="#testPackages"
+          >
+            <div class="test-details">
+              <p>C Reactive Protein (CRP) - Quantitative</p>
+              <p>CEA (Carcino Embryonic Antigen)</p>
+              <p>Complete Haemogram</p>
+              <p>Creatinine</p>
+              <p>ECG</p>
+              <p>GFR STUDY(GLOMERULAR FILTRATION RATE)- BLOOD</p>
+              <p>Glucose-random</p>
+              <p>Glycosylated Haemoglobin (HbA1c)</p>
+              <p>HIGH SENSITIVE TROPONIN I</p>
+              <p>Homocysteine Level</p>
+              <p>Lipid Profile</p>
+              <p>Liver Function Test</p>
+              <p>Spirometry</p>
+              <p>Urea</p>
+              <p>VITAL</p>
+              <p>Vitamin D3 (25 hydroxy cholecalciferol)</p>
+              <p>X-RAY Chest PA</p>
+            </div>
+          </div>
+        </div>
+        <div id="no-results" class="hidden">No Results Found</div>
     </div>
+      <div class="text-center mt-5">
+        <button id="view-more-btn" class="btn btn-primary">View More</button>
     </div>
+      
+
+      <div class="text-center mt-5 mb-5">
+        <a href="#" class="book-button">
+          Book Home Collection
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+            />
+          </svg>
+        </a>
+      </div>
     </section>
 
     <footer class="footer">
@@ -339,6 +2669,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="../js/script.js"></script>
-
-</body>
+  </body>
 </html>

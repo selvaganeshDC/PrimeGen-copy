@@ -128,3 +128,76 @@ function playVideo(videoUrl) {
     });
 }
 
+/* Packages test section  */
+document.querySelectorAll('.btn-link').forEach(button => {
+    button.addEventListener('click', function() {
+        const indicator = this.querySelector('.collapse-indicator svg');
+        if (this.classList.contains('collapsed')) {
+            indicator.style.transform = 'rotate(-90deg)';
+        } else {
+            indicator.style.transform = 'rotate(0deg)';
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll("#testPackages .card");
+    const viewMoreBtn = document.getElementById("view-more-btn");
+  
+    const cardsToShow = 6; // Number of cards to show initially
+    let showingAll = false;
+  
+    // Initially show the first 6 cards
+    cards.forEach((card, index) => {
+      if (index < cardsToShow) {
+        card.classList.add("visible");
+      }
+    });
+  
+    // Handle "View More" button click
+    viewMoreBtn.addEventListener("click", () => {
+      showingAll = !showingAll;
+  
+      if (showingAll) {
+        cards.forEach((card) => card.classList.add("visible"));
+        viewMoreBtn.textContent = "View Less";
+      } else {
+        cards.forEach((card, index) => {
+          if (index >= cardsToShow) {
+            card.classList.remove("visible");
+          }
+        });
+        viewMoreBtn.textContent = "View More";
+      }
+    });
+  });
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const searchInput = document.getElementById("search-input");
+    const cards = document.querySelectorAll("#testPackages .card");
+    const noResults = document.getElementById("no-results");
+  
+    searchInput.addEventListener("input", (event) => {
+      const query = event.target.value.toLowerCase();
+      let matches = 0;
+  
+      cards.forEach((card) => {
+        const testName = card.getAttribute("data-test-name");
+        if (testName && testName.toLowerCase().includes(query)) {
+          card.classList.remove("hidden");
+          matches++;
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+  
+      // Toggle "No results found" message
+      if (matches === 0) {
+        noResults.classList.remove("hidden");
+      } else {
+        noResults.classList.add("hidden");
+      }
+    });
+  });
+  
+  

@@ -114,7 +114,7 @@ body{
     padding: 15px;
     text-decoration: none;
     border-bottom: 1px solid #eee;
-    color: #666;
+    color: var(--primary-gray);
     transition: all 0.3s ease;
 }
 
@@ -1146,11 +1146,11 @@ body{
 /* Video Button Outer Styles */
 .btn-video-outer {
     position: absolute;
-    left: -28px;
+    left: -20px;
     top: 80%;
     z-index: 2;
-    width: 240px;
-    height: 80px;
+    width: 200px;
+    height: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1194,7 +1194,7 @@ body{
     margin: 0;
     margin-right: 25px;
     margin-left: -15px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .btn-play {
@@ -1211,7 +1211,7 @@ body{
 
 /* Play Icon Styles */
 .bi-play-fill {
-    font-size: 30px;
+    font-size: 15px;
 }
 
 /* Image Container Styles */

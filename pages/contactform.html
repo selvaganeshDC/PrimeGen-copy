@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Form</title>
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <link rel="stylesheet" href="./pages.css">
+
+</head>
+<body>
+     <!-- Top Bar -->
+     <div class="container-fluid top-bar">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6 contact-info text-center">
+              <span>Call for Enquiry and Home Collection +91 9499 937 009</span>
+              <a href="#">How home collection works?</a>
+            </div>
+            <div class="col-lg-3 book-btn d-flex justify-content-center gap-3">
+              <button class="btn-book-collection">Book Home Collection</button>
+              <span class="d-flex align-items-center justify-content-center"
+                ><a href="#" class="btn-download-reports"
+                  >Download Reports</a
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Main Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="../Assets/logo.png" alt="PrimeGen Logo" />
+          </a>
+          <div class="mobile-buttons">
+            <button class="btn-book-collection">Book Home Collection</button>
+            <a href="#" class="btn-download-reports">Download Reports</a>
+          </div>
+          <button
+            class="navbar-toggler border-0 p-0"
+            type="button"
+            id="mobileMenuBtn"
+          >
+            <img src="../Assets/menu.png" alt="menu" width="24" height="24" />
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="../homepage.html">Home</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+              
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About us
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Awards and Accreditations</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">News and Events</a></li>
+                </ul>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutus.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./packages.html">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Book a Test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./franchisee.html">Franchisee</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./careers.html">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactus.html">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+      <!-- Mobile Menu -->
+      <div class="mobile-overlay"></div>
+      <div class="mobile-menu">
+        <button class="close-button" id="closeMenu">×</button>
+        <a href="#" class="home">Home</a>
+        <!-- <a
+          href="#"
+          class="about-us dropdown-toggle"
+          data-bs-toggle="collapse"
+          data-bs-target="#aboutSubmenu"
+        >
+          About us
+        </a>
+        <div class="collapse submenu" id="aboutSubmenu">
+          <a href="#">Awards and Accreditations</a>
+          <a href="#">News and Events</a>
+        </div> -->
+        <a href="./aboutus.html">About us</a>
+        <a href="./packages.html">Packages</a>
+        <a href="#">Book a Test</a>
+        <a href="./franchisee.html">Franchisee</a>
+        <a href="./services.html">Services</a>
+        <a href="./careers.html">Careers</a>
+        <a href="./contactus.html">Contact us</a>
+      </div>
+      <!-- Address Form -->
+      <div class="container">
+        <div class="form-container bg-white">
+            <h2 class="text-center mb-4">Book a Test</h2>
+            <form id="addressForm" action="https://script.google.com/macros/s/AKfycbw76g05-wh6dOeG3asIwtvZOUE-0OD8ie30kFzp0b8zisGDbQ1UHRdxYNQDN9VEhDqpQw/exec" method="post">
+                <!-- Personal Information -->
+                <div class="row g-3">
+                    <div class="col-md-12">
+                        <input type="hidden" name="formType" value="testBooking">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" name="fullName" class="form-control" id="fullName" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" name="phone" class="form-control" id="phone" pattern="[0-9]{10}" required>
+                    </div>
+                </div>
+
+                <!-- Package Selection -->
+                <div class="section-divider">
+                    <div class="mb-3">
+                        <label for="packageSelect" class="form-label">Select Package</label>
+                        <select class="form-select" id="packageSelect">
+                        </select>
+                    </div>
+
+                    <!-- Selected Packages Section -->
+                    <div class="mb-3">
+                        <label class="form-label">Selected Packages</label>
+                        <div id="selectedPackages" class="selected-packages">
+                            <div class="text-muted text-center">No packages selected</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Address Section -->
+                <div class="section-divider">
+                    <h5 class="mb-3">Address Details</h5>
+                    
+                    <!-- <div class="mb-3">
+                        <a href="#" class="btn-location w-100 justify-content-center">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 8v8M8 12h8"/>
+                            </svg>
+                            Use Current Location
+                        </a>
+                    </div> -->
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="houseNo" class="form-label">House No/ Flat No</label>
+                            <input type="text" name="houseNo" class="form-control" id="houseNo" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="street" class="form-label">Street Name</label>
+                            <input type="text" name="street" class="form-control" id="street" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="area" class="form-label">Area</label>
+                            <input type="text" name="area" class="form-control" id="area" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" name="city" class="form-control" id="city" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="pincode" class="form-label">Pincode</label>
+                            <input type="text" name="pincode" class="form-control" id="pincode" pattern="[0-9]{6}" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="landmark" class="form-label">Landmark</label>
+                            <input type="text" name="landmark" class="form-control" id="landmark">
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn booktestbtn w-25 mt-4 py-2">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo text-center mb-5">
+                <img src="./Assets//logo.png" alt="Company Logo" class="img-fluid">
+            </div>
+            <div class="row">
+                <!-- Information Column -->
+                <div class="col-md-3 mb-4">
+                    <h4>INFORMATION</h4>
+                    <ul>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="./pages/termsandcontitions.html">Terms & Conditions</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="./pages/privacy.html">Privacy Policy</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="./pages/cancellationandrefund.html">Cancellation and Refund</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="./pages/termsofservice.html">Terms of Service</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="./pages/cookiepolicy.html">Cookie Policy</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="./pages/patientinformationconsent.html">Patient Information Consent</a></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contacts Column -->
+                <div class="col-md-3 mb-4">
+                    <h4>CONTACTS</h4>
+                    <div class="contact-info">
+                        <p><i class="bi bi-telephone-fill"></i> +91-44-43596319</p>
+                        <p><i class="bi bi-telephone-fill"></i> +91-44-29530009</p>
+                        <p><i class="bi bi-telephone-fill"></i> +91-44-22670097</p>
+                        <p><i class="bi bi-telephone-fill"></i> +91-9499937009</p>
+                    </div>
+                    <p>
+                        <i class="bi bi-geo-alt-fill"></i> ShriAshi Tower,<br>
+                        No.30/36, 23rd Street,<br>
+                        Thillai Ganga Nagar,<br>
+                        Nanganallur,<br>
+                        Chennai - 600061
+                    </p>
+                    <p><i class="bi bi-envelope-fill"></i> info@example.in</p>
+                </div>
+
+                <!-- Opening Hours Column -->
+                <div class="col-md-3 mb-4 d-flex flex-column justify-content-between">
+                    <div class="opening-hours">
+                        <h4>OPENING HOURS</h4>
+                        <p>Mon - Sat: 07:00 to 21:00</p>
+                        <p>Sunday: 07:00 to 19:00</p>
+                    </div>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-md-3 mb-4">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="./pages/AboutUs.html">About Us</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="./pages/Packages.html">Accreditation</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="./pages/Services.html">Services</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="#">Book a Test</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="./pages/Franchisee.html">Franchisee</a></span>
+                        </li>
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="./pages/Careers.html">Careers</a></span>
+                        </li>
+                        <!-- <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="#">Events</a></span>
+                        </li> -->
+                        <li>
+                            <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                            <span><a href="./pages/ContactUs.html">Contact Us</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- Copyright Section -->
+            <div class="copyright">
+                <p>Copyright © 2024 Your Company Name. All rights reserved.</p>
+                <p>Powered by YourCompany</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/booktest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

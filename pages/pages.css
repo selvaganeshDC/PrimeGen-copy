@@ -957,3 +957,36 @@
     display: none;
   }
   
+  
+  /*terms and condition, privacy policy, cancellation and refund, terms of services, cookie policy and patient information consent*/
+  .text-justify{
+    text-align: justify !important;
+  }
+  .custom-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 0;
+  }
+  .custom-list li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: rgb(33, 37, 41);
+  }
+  .title {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    margin-bottom: 15px;
+  }
+  .content-wrapper {
+    max-width: 1200px;
+    padding: 20px;
+  }
+  a {
+    color: var(--primary-blue-name);
+    text-decoration: none;
+  }
+
+  

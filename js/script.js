@@ -199,5 +199,32 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  document.getElementById("contact-form").addEventListener("submit", async function (event) {
+    event.preventDefault();
   
+    const form = event.target;
+    const formData = new FormData(form);
+  
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+        },
+        body: formData,
+      });
+  
+      const result = await response.json();
+      if (result.status === "success") {
+        alert("Email sent successfully!");
+        form.reset();
+      } else {
+        alert("Error: " + result.message);
+      }
+    } catch (error) {
+      console.error("An error occurred:", error);
+      alert("Failed to send email.");
+    }
+  });
   

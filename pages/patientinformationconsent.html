@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Information Consent</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <link rel="stylesheet" href="pages.css">
+
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="container-fluid top-bar">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-6 contact-info text-center">
+            <span>Call for Enquiry and Home Collection +91 9499 937 009</span>
+            <a href="#">How home collection works?</a>
+          </div>
+          <div class="col-lg-3 book-btn d-flex justify-content-center gap-3">
+            <button class="btn-book-collection">Book Home Collection</button>
+            <span class="d-flex align-items-center justify-content-center"
+              ><a href="#" class="btn-download-reports"
+                >Download Reports</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../Assets/logo.png" alt="PrimeGen Logo" />
+        </a>
+        <div class="mobile-buttons">
+          <button class="btn-book-collection">Book Home Collection</button>
+          <span class="d-flex align-items-center justify-content-center"><a href="#"
+            class="btn-download-reports">Download Reports</a></span>
+        </div>
+        <button
+          class="navbar-toggler border-0 p-0"
+          type="button"
+          id="mobileMenuBtn"
+        >
+          <img src="../Assets/menu.png" alt="menu" width="24" height="24" />
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../homepage.html">Home</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About us
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Awards and Accreditations</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">News and Events</a></li>
+                </ul>
+              </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="./aboutus.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./packages.html">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Book a Test</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./franchisee.html">Franchisee</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./careers.html">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactus.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-overlay"></div>
+    <div class="mobile-menu">
+      <button class="close-button" id="closeMenu">×</button>
+      <a href="../homepage.html" >Home</a>
+      <!-- <a
+          href="#"
+          class="about-us dropdown-toggle"
+          data-bs-toggle="collapse"
+          data-bs-target="#aboutSubmenu"
+        >
+          About us
+        </a>
+        <div class="collapse submenu" id="aboutSubmenu">
+          <a href="#">Awards and Accreditations</a>
+          <a href="#">News and Events</a>
+        </div> -->
+      <a href="./aboutus.html">About us</a>
+      <a href="./packages.html">Packages</a>
+      <a href="#">Book a Test</a>
+      <a href="./franchisee.html">Franchisee</a>
+      <a href="./services.html">Services</a>
+      <a href="./careers.html">Careers</a>
+      <a href="./contactus.html">Contact us</a>
+    </div>
+
+    <!-- cookie policy -->
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+          <h1 class="text-center mb-4">Patient Information Consent</h1>
+
+          <div class="mb-4">
+            <h2 class="h4 mb-3">Terms of Use</h2>
+            <p class="text-justify">
+              Data Collection by PrimeGen Healthcare Laboratories Pvt Ltd
+              (“PrimeGen”) shall collect and process the following information
+              from me:
+            </p>
+            <p class="text-justify">
+              <span class="fw-bold">Contact information:</span> Name, Address,
+              Contact details, Email ID, Phone Number;
+            </p>
+            <p class="text-justify mt-3">
+              <span class="fw-bold">Demographic information:</span> Gender, Age,
+              Date of Birth, Marital Status, Nationality;
+            </p>
+            <p class="text-justify mt-3">
+              Other information that I provide to PrimeGen or is generated while
+              availing services or interacting with PrimeGen employees, doctors,
+              technicians, consultants, etc.;Health information such as my
+              medical records and history provided by me or generated by
+              PrimeGen in the course of my availing of any services from
+              PrimeGen; Information about my insurance coverage provided by me
+              or generated on availing any services from PrimeGen; Information
+              regarding my physical, physiological and mental health provided by
+              me or generated on availing any services from PrimeGen, etc.;
+            </p>
+            <p class="text-justify mt-3">
+              Financial information (payment/billing information) that I provide
+              for availing services from PrimeGen; and Any other information
+              relating to the above which I may have shared with PrimeGen prior
+              to the date of this consent form for availing any services.
+              Purpose of Collection: I understand that PrimeGen may use the
+              information mentioned above to provide me with services, or use it
+              for other purposes, some of which are below: Registration to
+              receive services, maintenance of my unified health
+              profile/records, identification, communication, information on new
+              services and offers, taking feedback, help and complaint
+              resolution, other customer care related activities or issues
+              relating to the use of my services; Creation and maintenance of
+              electronic health records for use by PrimeGen, PrimeGen group
+              companies and affiliates, to provide relevant services; Receiving
+              personalized announcements/offers of various PrimeGen group
+              companies; Customising suggestions for appropriate medical
+              products and services offered by PrimeGen and affiliates; Research
+              for the development and improvement of our products and services
+              including our diagnostics and treatment protocols; Disclosure as
+              required to government authorities in compliance with applicable
+              law; Investigating, and resolving any disputes or grievances; and
+              Any purpose(s) required by applicable law Disclosure and Transfer
+              of Personal Information
+            </p>
+            <p class="text-justify mt-3">
+              For the abovementioned purposes, and to the extent permitted by
+              applicable law, PrimeGen may share, disclose and in some cases
+              transfer all or any information referred to above, to such
+              entities as required to provide services to me, or for compliance
+              with applicable laws. I understand that these entities include but
+              are not restricted to PrimeGen group companies, affiliate
+              companies, PrimeGen doctors, hospitals, diagnostic centres,
+              chemists, third party service providers to PrimeGen, and law
+              enforcement agencies. For these purposes, I consent to PrimeGen
+              transferring my personal information to entities that may be
+              located outside India.
+            </p>
+            <p class="text-justify mt-3">
+              I understand that in the event of a merger, reorganization,
+              acquisition, joint venture, assignment, spin-off, transfer, asset
+              sale, or sale or disposition of all or any portion of the PrimeGen
+              business, including in connection with any bankruptcy or similar
+              proceedings, PrimeGen may transfer any and all personal
+              information to the relevant third party with the same rights of
+              access and use. Retention of Personal Information
+            </p>
+            <p class="text-justify mt-3">
+              PrimeGen will keep any information collected from me for as long
+              as necessary to provide me with services or as may be required
+              under any law.
+            </p>
+            <p class="text-justify mt-3">
+              PrimeGen may retain information related to me if needed to prevent
+              fraud or abuse or for other legitimate purposes. PrimeGen may
+              store my personal information in de-identified form for the
+              purposes indicated in Section 2 above. My Rights I understand that
+              I have the right to access my personal information, and request
+              updation, correction and deletion of such information, but not
+              information processed in de-identified form, or any information
+              which is retained by PrimeGen to comply with applicable law. I
+              understand that I am free to not share any health, financial or
+              other information that I deem confidential. I understand that I
+              may withdraw consent for PrimeGen to use data that I have already
+              provided to it. I understand that if I exercise these rights,
+              PrimeGen can limit or deny the provision of services for which it
+              considers such information necessary. I understand that I may
+              contact support@primegen.in for any questions or for exercise of
+              these rights and for any other grievances related to my personal
+              information. I hereby give my consent to PrimeGen to collect, use,
+              store, share, and / or otherwise process my personal information
+              in accordance with this consent form.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+          <div class="footer-logo text-center mb-5">
+              <img src="../Assets/logo.png" alt="Company Logo" class="img-fluid" onclick="window.location.href='../homepage.html'" style="cursor: pointer;">
+          </div>
+          <div class="row">
+              <!-- Information Column -->
+              <div class="col-md-3 mb-4">
+                  <h4>INFORMATION</h4>
+                  <ul>
+                    <li>
+                      <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                      <span><a href="./termsandcontitions.html">Terms & Conditions</a></span>
+                  </li>
+                  <li>
+                      <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                      <span><a href="./privacy.html">Privacy Policy</a></span>
+                  </li>
+                  <li>
+                      <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                      <span><a href="./cancellationandrefund.html">Cancellation and Refund</a></span>
+                  </li>
+                  <li>
+                      <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                      <span><a href="./termsofservice.html">Terms of Service</a></span>
+                  </li>
+                  <li>
+                      <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                      <span><a href="./cookiepolicy.html">Cookie Policy</a></span>
+                  </li>
+                  <li>
+                      <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                      <span><a href="./patientinformationconsent.html">Patient Information Consent</a></span>
+                  </li>
+                  </ul>
+                </div>
+          
+              <!-- Contacts Column -->
+              <div class="col-md-3 mb-4">
+                  <h4>CONTACTS</h4>
+                  <div class="contact-info">
+                      <p><i class="bi bi-telephone-fill"></i> <a href="tel:+914443596319" class="text-decoration-none">+91-44-43596319</a></p>
+                      <p><i class="bi bi-telephone-fill"></i> <a href="tel:+914429530009" class="text-decoration-none">+91-44-29530009</a></p>
+                      <p><i class="bi bi-telephone-fill"></i> <a href="tel:+914422670097" class="text-decoration-none">+91-44-22670097</a></p>
+                      <p><i class="bi bi-telephone-fill"></i> <a href="tel:+919499937009" class="text-decoration-none">+91-9499937009</a></p>
+                  </div>
+                  
+                  <p>
+                      <i class="bi bi-geo-alt-fill"></i> 
+                      <a href="https://www.google.com/maps?q=ShriAshi+Tower,+No.30/36,+23rd+Street,+Thillai+Ganga+Nagar,+Nanganallur,+Chennai+600061" target="_blank" class="text-decoration-none email-footer">
+                          ShriAshi Tower,<br>
+                          No.30/36, 23rd Street,<br>
+                          Thillai Ganga Nagar,<br>
+                          Nanganallur,<br>
+                          Chennai - 600061
+                      </a>
+                  </p>
+                  
+                  <a href="mailto:info@primegen.in" class="text-decoration-none email-footer"><span><i class="bi bi-envelope-fill"></i></span>info@primegen.in</a>
+              </div>
+          
+              <!-- Opening Hours Column -->
+              <div class="col-md-3 mb-4 d-flex flex-column justify-content-between">
+                  <div class="opening-hours">
+                      <h4>OPENING HOURS</h4>
+                      <p>Mon - Sat: 07:00 to 21:00</p>
+                      <p>Sunday: 07:00 to 19:00</p>
+                  </div>
+                  <div class="social-icons mt-4">
+                      <a href="https://www.facebook.com/PrimeGen-Healthcare-Laboratories-Private-Limited-100292264678709/"><i class="bi bi-facebook"></i></a>
+                      <a href="https://in.linkedin.com/in/dr-sreedhar-mayavan-3893465a"><i class="bi bi-linkedin"></i></a>
+                      <a href="https://www.youtube.com/channel/UCZlRxbL35lsZBMY2Epf_Qpg"><i class="bi bi-youtube"></i></a>
+                  </div>
+              </div>
+          
+              <!-- Quick Links Column -->
+              <div class="col-md-3 mb-4">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li>
+                        <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                        <span><a href="./aboutus.html">About Us</a></span>
+                    </li>
+                    <li>
+                        <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                        <span><a href="./packages.html">Packages</a></span>
+                    </li>
+                    <li>
+                        <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                        <span><a href="./services.html">Services</a></span>
+                    </li>
+                    <li>
+                        <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                        <span><a href="#">Book a Test</a></span>
+                    </li>
+                    <li>
+                        <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                        <span><a href="./franchisee.html">Franchisee</a></span>
+                    </li>
+                    <li>
+                        <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                        <span><a href="./careers.html">Careers</a></span>
+                    </li>
+                    <!-- <li>
+                        <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                        <span><a href="#">Events</a></span>
+                    </li> -->
+                    <li>
+                        <span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+                        <span><a href="./contactus.html">Contact Us</a></span>
+                    </li>
+                </ul>
+            </div>
+          </div>
+          
+  
+          <!-- Copyright Section -->
+          <div class="copyright">
+            <p>Copyright © 2025 PrimeGen Healthcare Laboratories Pvt Ltd. All rights reserved.</p>
+            <p>Powered by PrimeGen</p>
+        </div>
+      </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

@@ -124,14 +124,18 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch(form.action, {
                 method: "POST",
+                mode: 'cors',
                 headers: {
-                    Accept: "application/json",
-                },
-                body: formData,
+                    "Accept": "application/json",
+                    "Content-Type": "application/x-www-form-urlencoded",
+                  },
+                  body: new URLSearchParams(formData),
+                // body : formData
             });
-
+            // console.log(response);
             const result = await response.json();
-            if (result.status === "success") {
+            
+            if (result.response.status === "success") {
                 alert("Booking submitted successfully!");
                 form.reset();
                 selectedPackages.clear(); // Reset selected packages

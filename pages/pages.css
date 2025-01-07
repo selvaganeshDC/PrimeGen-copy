@@ -222,10 +222,48 @@
 .opportunity-item i {
     color: #5b308a;
 }
+@media (max-width: 1200px) {
+    .blue-circle {
+        position: absolute;
+        width: 350px;
+        height: 330px;
+        background-color: var(--primary-purple);
+        border-radius: 50%;
+        left: -10px;
+        top:50px;
+        z-index: 1;
+    }
+    
+    .pink-circle {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        background-color: #FF1493;
+        border-radius: 50%;
+        left: -10px;
+        top: 70px;
+        z-index: 2;
+    }
+    
+    .profile-image {
+        position: relative;
+        z-index: 3;
+        max-width: 250px;
+        margin-left: 100px;
+        top: -50px;
+    }
+}
 
 @media (max-width: 768px) {
     .jobcareer-title {
         font-size: 36px;
+    }
+    .blue-circle {
+        left: 0px !important;
+        top:50px;
+    }
+    .pink-circle{
+        left: 0px !important;
     }
 
 }
@@ -512,7 +550,7 @@
 
 .package-name {
     font-size: clamp(20px, 3vw, 24px);
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     color: #333;
 }
 
@@ -693,6 +731,7 @@
     font-size: 1rem;
     line-height: 1.6;
     color: #444;
+    text-align: justify;
 }
 
 .primegen-link {
@@ -705,9 +744,9 @@
 }
 
 @media (max-width: 1200px) {
-    .profile-container{
+    /* .profile-container{
         display: none !important;;
-    }
+    } */
 }
 
 @media (max-width: 768px) {
@@ -1072,9 +1111,9 @@
     font-weight: 500;
     color: #495057;
 }
-.form-control:focus {
+/* .form-control:focus {
     box-shadow: 0 0 0 0.25rem rgba(13,110,253,.15);
-}
+} */
 .booktestbtn{
     background-color: var(--primary-pink);
     color: white;

@@ -66,7 +66,7 @@ $(document).ready(function () {
         cssEase: 'linear',
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 769,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2
@@ -210,13 +210,15 @@ document.getElementById("contact-form").addEventListener("submit", async functio
         const response = await fetch(form.action, {
             method: "POST",
             headers: {
-                Accept: "application/json",
-            },
-            body: formData,
+                "Accept": "application/json",
+                "Content-Type": "application/x-www-form-urlencoded",
+              },
+            mode: 'cors',
+            body: new URLSearchParams(new FormData(form)),
         });
 
         const result = await response.json();
-        if (result.status === "success") {
+        if (result.response.status === "success") {
             alert("Email sent successfully!");
             form.reset();
         } else {

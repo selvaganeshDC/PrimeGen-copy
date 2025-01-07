@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         packageSelect.innerHTML = '<option value="" selected disabled>Choose a package</option>';
         packagesData.packages.forEach(package => {
             packageSelect.innerHTML += `
-                <option value="${package.id}">${package.name} - ₹${package.price}</option>
+                <option value="${package.id}">${package.name}</option>
             `;
         });
     }
@@ -86,18 +86,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="package-item">
                     <span class="package-name">${package.name}</span>
                     <div>
-                        <span class="package-price me-3">₹${package.price}</span>
                         <button type="button" class="remove-package" data-package="${packageId}">×</button>
                     </div>
                 </div>
             `;
         });
 
-        packagesHTML += `
-            <div class="total-price">
-                Total: ₹${totalPrice}
-            </div>
-        `;
+        // packagesHTML += `
+        //     <div class="total-price">
+        //         Total: ₹${totalPrice}
+        //     </div>
+        // `;
 
         selectedPackagesContainer.innerHTML = packagesHTML;
 

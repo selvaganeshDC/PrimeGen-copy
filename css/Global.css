@@ -1100,13 +1100,13 @@ body{
     z-index: 1;
 }
 
-.slick-prev {
+/* .slick-prev {
     left: -20px;
-}
+} */
 
-.slick-next {
+/* .slick-next {
     right: -20px;
-}
+} */
 
 .slick-prev:before, .slick-next:before {
     color: #333;
@@ -1526,7 +1526,7 @@ body{
 }
 .specialist-img {
     width: 150px;
-    height: 150px;
+    height: 200px;
     margin: 0 auto 15px;
     display: block;
     object-fit: cover;
@@ -1552,10 +1552,10 @@ body{
             background: transparent;
         }
         .slick-prev {
-            left: -30px;
+            left: 0px;
         }
         .slick-next {
-            right: -30px;
+            right: 0px;
         }
         .slick-prev:before {
             content: '←';

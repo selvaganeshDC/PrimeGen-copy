@@ -876,7 +876,7 @@
     font-size: 14px;
 }
 .price {
-    background: #E91E63;
+    background: var(--primary-pink);
     color: white;
     padding: 8px 16px;
     border-radius: 20px;
@@ -885,7 +885,7 @@
     box-shadow: 0 2px 10px rgba(233, 30, 99, 0.2);
 }
 .book-button {
-    background: linear-gradient(45deg, #E91E63, #FF5252);
+    background: linear-gradient(45deg, var(--primary-pink), var(--primary-purple));
     color: white;
     border: none;
     border-radius: 25px;
@@ -898,7 +898,7 @@
     box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
 }
 .book-button:hover {
-    background: linear-gradient(45deg, #FF5252, #E91E63);
+    background: linear-gradient(45deg, var(--primary-purple), var(--primary-pink));
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(233, 30, 99, 0.4);

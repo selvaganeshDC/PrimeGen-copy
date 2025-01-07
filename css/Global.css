@@ -66,9 +66,11 @@ body{
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
+.navbar-brand{
+    margin-right: 0 !important;
+}
 .navbar-brand img {
-    height: 70px;
+    height: 50px;
     width: auto;
 }
 
@@ -88,7 +90,9 @@ body{
 .navbar-nav .nav-link.active {
     color: var(--primary-pink);
 }
-
+.navbar-toggler{
+    padding: 1.5rem !important;
+}
 /* Mobile Menu Styles */
 .mobile-menu {
     position: fixed;

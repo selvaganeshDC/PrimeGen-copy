@@ -63,7 +63,7 @@
     position: relative;
     height: 400px;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
-        url('../Assets/about-us-banner.jpg') center/cover no-repeat;
+        url('../Assets/About-us.jpg') center/cover no-repeat;
     overflow: hidden;
 }
 
@@ -82,7 +82,7 @@
     position: relative;
     height: 400px;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
-        url('../Assets/our-services-23.03.2022.jpg') center/cover no-repeat;
+        url('../Assets/our-services.jpg') center/cover no-repeat;
     overflow: hidden;
 }
 
@@ -101,7 +101,7 @@
 }
 
 .main-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 

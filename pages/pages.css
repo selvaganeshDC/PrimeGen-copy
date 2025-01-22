@@ -95,6 +95,20 @@
         url('../Assets/franchisee-enquiry.jpg') center/cover no-repeat;
     overflow: hidden;
 }
+.hero-section-award{
+    position: relative;
+    height: 400px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
+        url('../Assets/Awards\ \(1\).jpg') center/cover no-repeat;
+    overflow: hidden;
+}
+.hero-section-news{
+    position: relative;
+    height: 400px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
+        url('../Assets/News-events.jpg') center/cover no-repeat;
+    overflow: hidden;
+}
 
 .main-content {
     margin-left: 60px;

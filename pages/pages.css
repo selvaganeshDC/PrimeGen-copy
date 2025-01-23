@@ -166,6 +166,12 @@
     .hero-section-franchisee{
         text-align: center;
     }
+    .hero-section-award{
+        text-align: center;
+    }
+    .hero-section-news{
+        text-align: center;
+    }
 
     .content-wrapper {
         position: absolute;

@@ -1642,3 +1642,11 @@ header{
         font-size: 12px !important;
     }
 }
+.cta-button{
+    border-color: var(--primary-pink) !important;
+    color: var(--primary-pink) !important;
+}
+.cta-button:hover{
+    background-color: var(--primary-pink) !important;
+    color: white !important;
+}

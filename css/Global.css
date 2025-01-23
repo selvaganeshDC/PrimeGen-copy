@@ -1632,6 +1632,9 @@ header{
     .role{
         color: var(--primary-purple);
     }
+    .contact-info span{
+        font-size: 12px !important;
+    }
 }
 
 @media (max-width: 376px) {
